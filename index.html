@@ -7365,7 +7365,7 @@
          *    - Tempelkan di DEFAULT_GAS_URL di bawah ini, ATAU
          *    - Masukkan lewat tombol "Apps Script" di header dashboard.
          */
-        const DEFAULT_GAS_URL = '';
+        const DEFAULT_GAS_URL = 'https://script.google.com/macros/s/AKfycbwHghYxCPr6JLba7PViILQEEOqEW48n8i15C7JgEjRpTdGtwrVLKz5pOXMRiUQiqtkI5w/exec';
         const GAS_STORAGE_KEY = 'dailyMaticChoFixed_gas_url';
 
         function getGasWebAppUrl() {
@@ -7380,7 +7380,11 @@
 
             try {
                 const saved = localStorage.getItem(GAS_STORAGE_KEY);
-                if (saved && saved.trim().startsWith('http')) return saved.trim();
+                if (saved && saved.includes('AKfycbzZouIxhd6tWOf41dk1iV0W54dM66KE0J6oGPPeRJoC4fBjM_zYUnHhkHpQYaJRrjpt')) {
+                    localStorage.removeItem(GAS_STORAGE_KEY);
+                } else if (saved && saved.trim().startsWith('http')) {
+                    return saved.trim();
+                }
             } catch (e) { }
 
             return DEFAULT_GAS_URL ? DEFAULT_GAS_URL.trim() : '';

@@ -6,12 +6,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Daily Matic CHO - Dashboard Kinerja &amp; Best Perform</title>
-    <meta name="description" content="Portal Analitik &amp; Monitoring Kinerja Harian Agent CHO Mobile, Best Perform Leaderboard, dan Evaluasi Populasi Metrik CSDM">
+    <meta name="description" content="Portal Analitik &amp; Monitoring Kinerja Harian Agent CHO Fixed, Best Perform Leaderboard, dan Evaluasi Populasi Metrik CSDM">
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📊</text></svg>">
     <script>
         (function () {
             try {
-                var saved = localStorage.getItem('dailyMaticCho_theme');
+                var saved = localStorage.getItem('dailyMaticChoFixed_theme');
                 var theme = (saved === 'dark' || saved === 'light') ? saved : 'light';
                 document.documentElement.setAttribute('data-theme', theme);
             } catch (e) { }
@@ -7010,7 +7010,7 @@
                     <div class="um-add-form">
                         <div class="filter-field">
                             <label id="umUsernameLabel">Username</label>
-                            <input type="text" id="umNewUsername" class="dark-input" placeholder="Username (mis. 23255622)">
+                            <input type="text" id="umNewUsername" class="dark-input" placeholder="Username (mis. 12345678)">
                         </div>
                         <div class="filter-field">
                             <label>Nama</label>
@@ -7351,20 +7351,22 @@
     </svg>
 
     <script>
-        /* ================= GOOGLE APPS SCRIPT WEB APP INTEGRATION (GITHUB PAGES / LIVE) ================= */
+        /* ================= GOOGLE APPS SCRIPT WEB APP INTEGRATION (DAILY MATIC CHO FIXED) ================= */
         /**
-         * Konfigurasi URL Google Apps Script Web App Deployment.
-         * Agar link GitHub Pages Anda bisa menarik data langsung dari Google Sheets / Google Apps Script:
-         * 1. Deploy script Anda di script.google.com:
-         *    - Deploy > Manage deployments > Edit
-         *    - Version: New version
+         * Konfigurasi URL Google Apps Script Web App Deployment untuk Daily Matic CHO Fixed.
+         * PENTING: Jangan gunakan URL Apps Script Daily Matic Mobile agar data & user kedua sistem terisolasi 100%!
+         * 
+         * Langkah Menghubungkan Apps Script CHO Fixed:
+         * 1. Deploy file Code.gs dari spreadsheet CHO Fixed (ID: 1gk5lMzOFRJ8wQfXb2cZpLLEz1Cv_vZ95koIjXqXJwtw)
+         * 2. Di Apps Script: Deploy > New deployment > Web app:
          *    - Execute as: Me
          *    - Who has access: Anyone (Siapa saja)
-         * 2. Salin URL Web App yang berakhiran "/exec", lalu tempelkan di DEFAULT_GAS_URL di bawah ini
-         *    (atau atur kapan saja lewat tombol 'Apps Script' di header web app).
+         * 3. Salin URL Web App yang berakhiran "/exec", lalu:
+         *    - Tempelkan di DEFAULT_GAS_URL di bawah ini, ATAU
+         *    - Masukkan lewat tombol "Apps Script" di header dashboard.
          */
-        const DEFAULT_GAS_URL = 'https://script.google.com/macros/s/AKfycbzZouIxhd6tWOf41dk1iV0W54dM66KE0J6oGPPeRJoC4fBjM_zYUnHhkHpQYaJRrjpt/exec';
-        const GAS_STORAGE_KEY = 'dailyMaticCho_gas_url';
+        const DEFAULT_GAS_URL = '';
+        const GAS_STORAGE_KEY = 'dailyMaticChoFixed_gas_url';
 
         function getGasWebAppUrl() {
             try {
@@ -7593,11 +7595,9 @@
                             const isSuperPass = (cp === 'admin123' || cp === 'admin' || cp === 'superadmin' || cp === 'superadmin123');
                             const isView = (cu === 'view' && cp === 'view123');
 
-                            // Cek dari mock users
+                            // Cek dari mock users (Hanya user internal Daily Matic CHO Fixed)
                             const mockList = window.__mockUsers || [
-                                { username: 'superadmin', role: 'superadmin', nama: 'Super Admin', password: null },
-                                { username: '19233208', role: 'view', nama: 'Eva Aroma Fitriawan', password: 'password123' },
-                                { username: '23255622', role: 'view', nama: 'Muhammad Syaiful', password: 'password456' }
+                                { username: 'superadmin', role: 'superadmin', nama: 'Super Admin', password: null }
                             ];
                             const found = mockList.find(function (x) { return String(x.username).toLowerCase() === cu; });
                             if (found && (!found.password || found.password === cp || isSuperPass)) {
@@ -7619,7 +7619,7 @@
                                     username: isSuper ? 'superadmin' : u
                                 });
                             } else {
-                                onSucc({ success: false, message: 'Username atau password salah. (Akses Demo: gunakan superadmin / superadmin123 atau 19233208 / password123)' });
+                                onSucc({ success: false, message: 'Username atau password salah. (Akses Demo: gunakan superadmin / superadmin123)' });
                             }
                         }, 200);
                     },
@@ -7870,9 +7870,7 @@
                         setTimeout(function () {
                             if (!window.__mockUsers) {
                                 window.__mockUsers = [
-                                    { username: 'superadmin', role: 'superadmin', nama: 'Super Admin', createdAt: new Date().toISOString(), password: null },
-                                    { username: '19233208', role: 'view', nama: 'Eva Aroma Fitriawan', createdAt: new Date().toISOString(), password: 'password123' },
-                                    { username: '23255622', role: 'view', nama: 'Muhammad Syaiful', createdAt: new Date().toISOString(), password: 'password456' }
+                                    { username: 'superadmin', role: 'superadmin', nama: 'Super Admin', createdAt: new Date().toISOString(), password: null }
                                 ];
                             }
                             onSucc(window.__mockUsers.map(function (u) {
@@ -7946,45 +7944,7 @@
                     getActivityLogs: function (token, targetUser, limit) {
                         setTimeout(function () {
                             if (!window.__mockActivityLogs) {
-                                const now = new Date();
-                                window.__mockActivityLogs = [
-                                    {
-                                        timestamp: new Date(now - 120000).toISOString(),
-                                        username: '23255622',
-                                        nama: 'Muhammad Syaiful',
-                                        role: 'view',
-                                        action: 'Buka Metrik',
-                                        details: 'Melihat detail metrik AHT (Average Handling Time)',
-                                        userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)'
-                                    },
-                                    {
-                                        timestamp: new Date(now - 300000).toISOString(),
-                                        username: '19233208',
-                                        nama: 'Eva Aroma Fitriawan',
-                                        role: 'view',
-                                        action: 'Terapkan Filter',
-                                        details: 'Filter periode diterapkan: Harian (04/10/2026)',
-                                        userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)'
-                                    },
-                                    {
-                                        timestamp: new Date(now - 600000).toISOString(),
-                                        username: '23255622',
-                                        nama: 'Muhammad Syaiful',
-                                        role: 'view',
-                                        action: 'Ganti Tab',
-                                        details: 'Membuka segmen Metrik FCR',
-                                        userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)'
-                                    },
-                                    {
-                                        timestamp: new Date(now - 900000).toISOString(),
-                                        username: '19233208',
-                                        nama: 'Eva Aroma Fitriawan',
-                                        role: 'view',
-                                        action: 'Login Berhasil',
-                                        details: 'User berhasil login ke sistem Web App',
-                                        userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)'
-                                    }
-                                ];
+                                window.__mockActivityLogs = [];
                             }
                             let res = window.__mockActivityLogs.slice();
                             if (targetUser && targetUser !== 'all') {
@@ -8002,16 +7962,16 @@
                     getProfilePhotos: function (token) {
                         setTimeout(function () {
                             let photos = {};
-                            try { photos = JSON.parse(localStorage.getItem('bp_profile_photos') || '{}'); } catch (e) { }
+                            try { photos = JSON.parse(localStorage.getItem('bp_profile_photos_fixed') || '{}'); } catch (e) { }
                             onSucc(photos);
                         }, 60);
                     },
                     saveProfilePhoto: function (token, name, type, photoData) {
                         setTimeout(function () {
                             try {
-                                const photos = JSON.parse(localStorage.getItem('bp_profile_photos') || '{}');
+                                const photos = JSON.parse(localStorage.getItem('bp_profile_photos_fixed') || '{}');
                                 photos[name] = photoData;
-                                localStorage.setItem('bp_profile_photos', JSON.stringify(photos));
+                                localStorage.setItem('bp_profile_photos_fixed', JSON.stringify(photos));
                             } catch (e) { }
                             onSucc({ success: true, name: name });
                         }, 80);
@@ -8019,9 +7979,9 @@
                     deleteProfilePhoto: function (token, name) {
                         setTimeout(function () {
                             try {
-                                const photos = JSON.parse(localStorage.getItem('bp_profile_photos') || '{}');
+                                const photos = JSON.parse(localStorage.getItem('bp_profile_photos_fixed') || '{}');
                                 delete photos[name];
-                                localStorage.setItem('bp_profile_photos', JSON.stringify(photos));
+                                localStorage.setItem('bp_profile_photos_fixed', JSON.stringify(photos));
                             } catch (e) { }
                             onSucc({ success: true, name: name });
                         }, 80);
@@ -8331,7 +8291,7 @@
         var cachedWatermarkText = '';
 
         /* ================= TEMA (LIGHT / DARK MODE) ================= */
-        const THEME_STORAGE_KEY = 'dailyMaticCho_theme';
+        const THEME_STORAGE_KEY = 'dailyMaticChoFixed_theme';
 
         function getSavedTheme() {
             try {
@@ -8388,7 +8348,7 @@
 
         // Sesi login saat ini: { token, username, role, nama } atau null kalau belum login
         let currentSession = null;
-        const SESSION_STORAGE_KEY = 'dailyMaticCho_session';
+        const SESSION_STORAGE_KEY = 'dailyMaticChoFixed_session';
 
         const CARD_ORDER = ['staffTime', 'produktivity', 'closedRate', 'callbackRate', 'aht', 'badtiket', 'qaScore', 'kehadiran'];
         const MONTH_NAMES_FULL = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
@@ -9961,7 +9921,7 @@
             if (!sidebar) return;
             const isCollapsed = sidebar.classList.toggle('collapsed');
             try {
-                localStorage.setItem('dailyMaticCho_sidebar_collapsed', isCollapsed ? 'true' : 'false');
+                localStorage.setItem('dailyMaticChoFixed_sidebar_collapsed', isCollapsed ? 'true' : 'false');
             } catch (e) { }
 
             const collapseBtn = document.getElementById('btnSidebarCollapse');
@@ -9989,7 +9949,7 @@
         // Restore saved sidebar collapsed state on start
         (function () {
             try {
-                var savedCollapse = localStorage.getItem('dailyMaticCho_sidebar_collapsed');
+                var savedCollapse = localStorage.getItem('dailyMaticChoFixed_sidebar_collapsed');
                 if (savedCollapse === 'true') {
                     window.addEventListener('DOMContentLoaded', function () {
                         var sb = document.getElementById('appSidebar');
@@ -10438,11 +10398,11 @@
         }
 
         /* ================= SUPABASE CLIENT CONFIGURATION ================= */
-        // Masukkan Project URL dan Anon Public Key dari Supabase Dashboard Anda:
-        // Supabase Dashboard > Project Settings > API > Project URL & anon public key
+        // Dikosongkan untuk Daily Matic CHO Fixed agar terisolasi 100% dari Supabase Mobile.
+        // Jika nantinya Daily Matic CHO Fixed memiliki project Supabase tersendiri, isi URL & key di sini.
         const SUPABASE_CONFIG = {
-            url: 'https://jvnshpfwtakbtcvpqjws.supabase.co',     // Contoh: 'https://xyzcompany.supabase.co'
-            anonKey: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imp2bnNocGZ3dGFrYnRjdnBxandzIiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTEwMDA5NjQsImV4cCI6MjEwNjU3Njk2NH0.q0CvJ53Gtkmo4L5n9TqKGQIYR5IfC9UM_JPsNxusFPg'  // Contoh: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...'
+            url: '',
+            anonKey: ''
         };
 
         async function fetchSupabaseBestPerform(tahunParam) {
@@ -11226,7 +11186,7 @@
         }
 
         /* ================= MANAJEMEN FOTO PROFIL JUARA (AUTO REMOVE BG) ================= */
-        const BP_PROFILE_PHOTOS_KEY = 'bp_profile_photos';
+        const BP_PROFILE_PHOTOS_KEY = 'bp_profile_photos_fixed';
         let cachedProfilePhotos = {};
         try {
             cachedProfilePhotos = JSON.parse(localStorage.getItem(BP_PROFILE_PHOTOS_KEY) || '{}');

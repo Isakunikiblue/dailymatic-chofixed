@@ -6,8 +6,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Daily Matic CHO - Dashboard Kinerja &amp; Best Perform</title>
-    <meta name="description" content="Portal Analitik &amp; Monitoring Kinerja Harian Agent CHO Fixed, Best Perform Leaderboard, dan Evaluasi Populasi Metrik CSDM">
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📊</text></svg>">
+    <meta name="description"
+        content="Portal Analitik &amp; Monitoring Kinerja Harian Agent CHO Fixed, Best Perform Leaderboard, dan Evaluasi Populasi Metrik CSDM">
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📊</text></svg>">
     <script>
         (function () {
             try {
@@ -480,6 +482,14 @@
             --card-glow: #FBBF24;
         }
 
+        .card[data-key="effectiveTime"] {
+            --card-glow: #F59E0B;
+        }
+
+        .card[data-key="ratioBa"] {
+            --card-glow: #8B5CF6;
+        }
+
         .card[data-key="nps"] {
             --card-glow: #06B6D4;
         }
@@ -564,14 +574,14 @@
             background: var(--bg-surface);
             flex-shrink: 0;
             transition: all .2s cubic-bezier(0.4, 0, 0.2, 1);
-            box-shadow: 0 2px 6px rgba(0,0,0,0.03);
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
             cursor: default;
             user-select: none;
         }
 
         .card-achieve-badge:hover {
             transform: translateY(-2px);
-            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
         }
 
         .card-achieve-badge .achieve-val {
@@ -605,6 +615,7 @@
             border-color: rgba(16, 185, 129, 0.35);
             color: #059669;
         }
+
         .card-achieve-badge.achieve-high .achieve-val {
             color: #059669;
         }
@@ -614,6 +625,7 @@
             border-color: rgba(245, 158, 11, 0.35);
             color: #D97706;
         }
+
         .card-achieve-badge.achieve-mid .achieve-val {
             color: #D97706;
         }
@@ -623,6 +635,7 @@
             border-color: rgba(244, 63, 94, 0.35);
             color: #E11D48;
         }
+
         .card-achieve-badge.achieve-low .achieve-val {
             color: #E11D48;
         }
@@ -632,6 +645,7 @@
             border-color: rgba(148, 163, 184, 0.25);
             color: var(--text-dim);
         }
+
         .card-achieve-badge.achieve-empty .achieve-val {
             color: var(--text-dim);
         }
@@ -641,6 +655,7 @@
             border-color: rgba(16, 185, 129, 0.45);
             color: #34D399;
         }
+
         [data-theme="dark"] .card-achieve-badge.achieve-high .achieve-val {
             color: #34D399;
         }
@@ -650,6 +665,7 @@
             border-color: rgba(245, 158, 11, 0.45);
             color: #FBBF24;
         }
+
         [data-theme="dark"] .card-achieve-badge.achieve-mid .achieve-val {
             color: #FBBF24;
         }
@@ -659,6 +675,7 @@
             border-color: rgba(244, 63, 94, 0.45);
             color: #FB7185;
         }
+
         [data-theme="dark"] .card-achieve-badge.achieve-low .achieve-val {
             color: #FB7185;
         }
@@ -2442,19 +2459,24 @@
                 min-height: 420px;
                 max-height: 94vh;
             }
+
             .panel-left {
                 padding: 20px 26px 16px 26px;
             }
+
             .welcome-title {
                 font-size: 24px;
                 margin-bottom: 8px;
             }
+
             .welcome-subtitle {
                 margin-bottom: 10px;
             }
+
             .input-field-group {
                 margin-bottom: 7px;
             }
+
             .hero-emblem-card {
                 width: 190px;
                 height: 190px;
@@ -2507,7 +2529,8 @@
             }
 
             .glass-input-box input {
-                font-size: 16px; /* Mencegah auto-zoom browser iOS iPhone Safari */
+                font-size: 16px;
+                /* Mencegah auto-zoom browser iOS iPhone Safari */
                 padding: 12px 0;
             }
 
@@ -4120,10 +4143,29 @@
             margin-bottom: 10px;
         }
 
-        .badge-blue { background: rgba(14, 165, 233, 0.15); color: #0EA5E9; border: 1px solid rgba(14, 165, 233, 0.3); }
-        .badge-purple { background: rgba(168, 85, 247, 0.15); color: #A855F7; border: 1px solid rgba(168, 85, 247, 0.3); }
-        .badge-gold { background: rgba(245, 158, 11, 0.15); color: #F59E0B; border: 1px solid rgba(245, 158, 11, 0.3); }
-        .badge-green { background: rgba(16, 185, 129, 0.15); color: #10B981; border: 1px solid rgba(16, 185, 129, 0.3); }
+        .badge-blue {
+            background: rgba(14, 165, 233, 0.15);
+            color: #0EA5E9;
+            border: 1px solid rgba(14, 165, 233, 0.3);
+        }
+
+        .badge-purple {
+            background: rgba(168, 85, 247, 0.15);
+            color: #A855F7;
+            border: 1px solid rgba(168, 85, 247, 0.3);
+        }
+
+        .badge-gold {
+            background: rgba(245, 158, 11, 0.15);
+            color: #F59E0B;
+            border: 1px solid rgba(245, 158, 11, 0.3);
+        }
+
+        .badge-green {
+            background: rgba(16, 185, 129, 0.15);
+            color: #10B981;
+            border: 1px solid rgba(16, 185, 129, 0.3);
+        }
 
         .bp-formula-box h5 {
             font-size: 13.5px;
@@ -4155,8 +4197,17 @@
             gap: 6px;
         }
 
-        .bullet.positive { color: #10B981; font-weight: 800; font-size: 10px; }
-        .bullet.efficiency { color: #3B82F6; font-weight: 800; font-size: 10px; }
+        .bullet.positive {
+            color: #10B981;
+            font-weight: 800;
+            font-size: 10px;
+        }
+
+        .bullet.efficiency {
+            color: #3B82F6;
+            font-weight: 800;
+            font-size: 10px;
+        }
 
         .bp-formula-formula-tag {
             background: rgba(0, 0, 0, 0.08);
@@ -4503,6 +4554,7 @@
             justify-content: center;
             margin-bottom: 8px;
         }
+
         .avatar-photo-img {
             width: 100%;
             height: 100%;
@@ -4510,6 +4562,7 @@
             object-fit: cover;
             display: block;
         }
+
         .avatar-camera-btn {
             position: absolute;
             bottom: 0px;
@@ -4529,17 +4582,20 @@
             transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
             z-index: 10;
         }
+
         .avatar-camera-btn:hover {
             transform: scale(1.18);
             background: linear-gradient(135deg, #6366F1, #9333EA);
             box-shadow: 0 4px 14px rgba(99, 102, 241, 0.55);
         }
+
         .lb-avatar-wrapper {
             position: relative;
             display: inline-flex;
             align-items: center;
             justify-content: center;
         }
+
         .lb-avatar-photo-img {
             width: 100%;
             height: 100%;
@@ -4547,6 +4603,7 @@
             object-fit: cover;
             display: block;
         }
+
         .lb-camera-icon {
             position: absolute;
             bottom: -3px;
@@ -4564,10 +4621,12 @@
             opacity: 0.85;
             pointer-events: none;
         }
+
         .lb-avatar-wrapper:hover .lb-camera-icon {
             opacity: 1;
             transform: scale(1.18);
         }
+
         .bp-photo-manage-btn {
             display: inline-flex;
             align-items: center;
@@ -4582,6 +4641,7 @@
             cursor: pointer;
             transition: all 0.2s ease;
         }
+
         .bp-photo-manage-btn:hover {
             background: linear-gradient(135deg, rgba(99, 102, 241, 0.35), rgba(168, 85, 247, 0.35));
             color: #FFFFFF;
@@ -4604,10 +4664,12 @@
             color: var(--text-main);
             transition: all 0.2s ease;
         }
+
         .btn-api-status-pill:hover {
             border-color: var(--purple-2);
             transform: translateY(-1px);
         }
+
         .status-dot-pulse {
             width: 8px;
             height: 8px;
@@ -4616,13 +4678,18 @@
             box-shadow: 0 0 8px rgba(16, 185, 129, 0.6);
             display: inline-block;
         }
+
         .status-dot-pulse.offline {
             background: #F59E0B;
             box-shadow: 0 0 8px rgba(245, 158, 11, 0.6);
         }
+
         .gas-config-modal-overlay {
             position: fixed;
-            top: 0; left: 0; right: 0; bottom: 0;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
             background: rgba(10, 15, 28, 0.82);
             backdrop-filter: blur(8px);
             -webkit-backdrop-filter: blur(8px);
@@ -4633,9 +4700,11 @@
             padding: 16px;
             animation: bpFadeIn 0.2s ease-out;
         }
+
         .gas-config-modal-overlay.open {
             display: flex;
         }
+
         .gas-config-modal-card {
             background: #181926;
             border: 1px solid rgba(255, 255, 255, 0.12);
@@ -4649,6 +4718,7 @@
             display: flex;
             flex-direction: column;
         }
+
         .gas-config-header {
             display: flex;
             align-items: center;
@@ -4656,11 +4726,13 @@
             padding: 20px 24px 16px;
             border-bottom: 1px solid rgba(255, 255, 255, 0.08);
         }
+
         .gas-config-title-group {
             display: flex;
             align-items: center;
             gap: 12px;
         }
+
         .gas-config-icon {
             width: 40px;
             height: 40px;
@@ -4673,23 +4745,27 @@
             font-size: 20px;
             flex-shrink: 0;
         }
+
         .gas-config-title {
             margin: 0;
             font-size: 16px;
             font-weight: 700;
             color: #FFFFFF;
         }
+
         .gas-config-subtitle {
             margin: 2px 0 0;
             font-size: 12px;
             color: #94A3B8;
         }
+
         .gas-config-body {
             padding: 20px 24px;
             display: flex;
             flex-direction: column;
             gap: 14px;
         }
+
         .gas-status-banner {
             display: flex;
             align-items: center;
@@ -4700,44 +4776,52 @@
             border: 1px solid rgba(255, 255, 255, 0.08);
             font-size: 12.5px;
         }
+
         .gas-status-indicator {
             display: flex;
             align-items: center;
             gap: 8px;
         }
+
         .gas-status-source {
             font-size: 11px;
             color: #94A3B8;
             font-family: monospace;
         }
+
         .gas-test-result {
             padding: 10px 14px;
             border-radius: 10px;
             font-size: 12px;
             line-height: 1.5;
         }
+
         .gas-test-result.success {
             background: rgba(16, 185, 129, 0.15);
             border: 1px solid rgba(16, 185, 129, 0.4);
             color: #34D399;
         }
+
         .gas-test-result.error {
             background: rgba(239, 68, 68, 0.15);
             border: 1px solid rgba(239, 68, 68, 0.4);
             color: #F87171;
         }
+
         .gas-guide-card {
             background: rgba(139, 92, 246, 0.08);
             border: 1px solid rgba(139, 92, 246, 0.2);
             border-radius: 12px;
             padding: 12px 16px;
         }
+
         .gas-guide-title {
             font-size: 12px;
             font-weight: 700;
             color: #C4B5FD;
             margin-bottom: 6px;
         }
+
         .gas-guide-list {
             margin: 0;
             padding-left: 18px;
@@ -4745,6 +4829,7 @@
             color: #CBD5E1;
             line-height: 1.6;
         }
+
         .gas-config-footer {
             display: flex;
             align-items: center;
@@ -4756,7 +4841,10 @@
         /* PHOTO UPLOAD & REMOVE BACKGROUND MODAL */
         .bp-photo-modal-overlay {
             position: fixed;
-            top: 0; left: 0; right: 0; bottom: 0;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
             background: rgba(10, 15, 28, 0.82);
             backdrop-filter: blur(8px);
             -webkit-backdrop-filter: blur(8px);
@@ -4767,9 +4855,11 @@
             padding: 16px;
             animation: bpFadeIn 0.2s ease-out;
         }
+
         .bp-photo-modal-overlay.open {
             display: flex;
         }
+
         .bp-photo-modal-card {
             background: #181926;
             border: 1px solid rgba(255, 255, 255, 0.12);
@@ -4783,6 +4873,7 @@
             display: flex;
             flex-direction: column;
         }
+
         .bp-photo-modal-header {
             display: flex;
             align-items: center;
@@ -4790,11 +4881,13 @@
             padding: 20px 24px 16px;
             border-bottom: 1px solid rgba(255, 255, 255, 0.08);
         }
+
         .bp-photo-modal-title-group {
             display: flex;
             align-items: center;
             gap: 12px;
         }
+
         .bp-photo-modal-icon {
             width: 40px;
             height: 40px;
@@ -4806,17 +4899,20 @@
             font-size: 20px;
             box-shadow: 0 4px 14px rgba(79, 70, 229, 0.35);
         }
+
         .bp-photo-modal-title {
             margin: 0;
             font-size: 16px;
             font-weight: 700;
             color: #FFFFFF;
         }
+
         .bp-photo-modal-subtitle {
             margin: 2px 0 0;
             font-size: 11.5px;
             color: #94A3B8;
         }
+
         .bp-photo-close-btn {
             background: transparent;
             border: none;
@@ -4827,30 +4923,36 @@
             line-height: 1;
             transition: color 0.15s ease;
         }
+
         .bp-photo-close-btn:hover {
             color: #FFFFFF;
         }
+
         .bp-photo-modal-body {
             padding: 20px 24px;
             display: flex;
             flex-direction: column;
             gap: 16px;
         }
+
         .bp-photo-form-row {
             display: flex;
             gap: 12px;
             align-items: flex-end;
         }
+
         .bp-photo-field {
             display: flex;
             flex-direction: column;
             gap: 6px;
         }
+
         .bp-photo-label {
             font-size: 12px;
             font-weight: 600;
             color: #CBD5E1;
         }
+
         .bp-photo-type-toggle {
             display: flex;
             background: rgba(255, 255, 255, 0.05);
@@ -4859,6 +4961,7 @@
             padding: 3px;
             gap: 4px;
         }
+
         .bp-type-btn {
             background: transparent;
             border: none;
@@ -4871,11 +4974,13 @@
             transition: all 0.15s ease;
             white-space: nowrap;
         }
+
         .bp-type-btn.active {
             background: #4F46E5;
             color: #FFFFFF;
             box-shadow: 0 2px 8px rgba(79, 70, 229, 0.4);
         }
+
         .bp-photo-select {
             width: 100%;
             height: 38px;
@@ -4886,6 +4991,7 @@
             padding: 0 12px;
             font-size: 12.5px;
         }
+
         .bp-photo-dropzone {
             border: 2px dashed rgba(99, 102, 241, 0.45);
             background: rgba(99, 102, 241, 0.05);
@@ -4895,24 +5001,30 @@
             cursor: pointer;
             transition: all 0.2s ease;
         }
-        .bp-photo-dropzone:hover, .bp-photo-dropzone.dragover {
+
+        .bp-photo-dropzone:hover,
+        .bp-photo-dropzone.dragover {
             border-color: #818CF8;
             background: rgba(99, 102, 241, 0.12);
             transform: scale(1.01);
         }
+
         .bp-dropzone-icon {
             font-size: 32px;
             margin-bottom: 8px;
         }
+
         .bp-dropzone-text {
             font-size: 13.5px;
             color: #E2E8F0;
             margin-bottom: 4px;
         }
+
         .bp-dropzone-sub {
             font-size: 11.5px;
             color: #94A3B8;
         }
+
         .bp-photo-status {
             display: flex;
             align-items: center;
@@ -4926,6 +5038,7 @@
             font-weight: 600;
             color: #C7D2FE;
         }
+
         .bp-photo-spinner {
             width: 16px;
             height: 16px;
@@ -4934,15 +5047,20 @@
             border-radius: 50%;
             animation: bpSpin 0.75s linear infinite;
         }
+
         @keyframes bpSpin {
-            to { transform: rotate(360deg); }
+            to {
+                transform: rotate(360deg);
+            }
         }
+
         .bp-photo-preview-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 14px;
             margin-bottom: 14px;
         }
+
         .bp-preview-box {
             background: rgba(0, 0, 0, 0.35);
             border: 1px solid rgba(255, 255, 255, 0.08);
@@ -4952,6 +5070,7 @@
             flex-direction: column;
             gap: 10px;
         }
+
         .bp-preview-box-header {
             display: flex;
             align-items: center;
@@ -4960,6 +5079,7 @@
             font-weight: 600;
             color: #94A3B8;
         }
+
         .bp-badge-success {
             background: rgba(16, 185, 129, 0.2);
             color: #34D399;
@@ -4969,6 +5089,7 @@
             font-weight: 700;
             border: 1px solid rgba(16, 185, 129, 0.3);
         }
+
         .bp-badge-gold {
             background: rgba(245, 158, 11, 0.2);
             color: #FBBF24;
@@ -4978,14 +5099,15 @@
             font-weight: 700;
             border: 1px solid rgba(245, 158, 11, 0.3);
         }
+
         .bp-checkerboard-wrap {
             height: 140px;
             border-radius: 10px;
             background-color: #12131A;
-            background-image: 
-                linear-gradient(45deg, #1A1C28 25%, transparent 25%), 
-                linear-gradient(-45deg, #1A1C28 25%, transparent 25%), 
-                linear-gradient(45deg, transparent 75%, #1A1C28 75%), 
+            background-image:
+                linear-gradient(45deg, #1A1C28 25%, transparent 25%),
+                linear-gradient(-45deg, #1A1C28 25%, transparent 25%),
+                linear-gradient(45deg, transparent 75%, #1A1C28 75%),
                 linear-gradient(-45deg, transparent 75%, #1A1C28 75%);
             background-size: 16px 16px;
             background-position: 0 0, 0 8px, 8px -8px, -8px 0px;
@@ -4995,11 +5117,13 @@
             overflow: hidden;
             border: 1px solid rgba(255, 255, 255, 0.05);
         }
+
         .bp-cutout-canvas {
             max-width: 100%;
             max-height: 100%;
             object-fit: contain;
         }
+
         .bp-podium-preview-container {
             height: 140px;
             display: flex;
@@ -5008,6 +5132,7 @@
             justify-content: center;
             gap: 8px;
         }
+
         .bp-preview-podium-circle {
             width: 80px;
             height: 80px;
@@ -5020,11 +5145,13 @@
             align-items: center;
             justify-content: center;
         }
+
         .bp-preview-podium-circle canvas {
             width: 100%;
             height: 100%;
             object-fit: cover;
         }
+
         .bp-preview-podium-name {
             font-size: 11.5px;
             font-weight: 700;
@@ -5035,6 +5162,7 @@
             text-overflow: ellipsis;
             text-align: center;
         }
+
         .bp-photo-adjustments {
             background: rgba(255, 255, 255, 0.03);
             border: 1px solid rgba(255, 255, 255, 0.08);
@@ -5044,12 +5172,14 @@
             flex-direction: column;
             gap: 12px;
         }
+
         .bp-adjust-toggle-row {
             display: flex;
             align-items: center;
             justify-content: space-between;
             font-size: 12px;
         }
+
         .bp-switch-label {
             display: inline-flex;
             align-items: center;
@@ -5059,26 +5189,31 @@
             font-weight: 600;
             color: #E2E8F0;
         }
+
         .bp-switch-label input {
             cursor: pointer;
             accent-color: #6366F1;
             width: 16px;
             height: 16px;
         }
+
         .bp-adjust-tip {
             font-size: 10.5px;
             color: #94A3B8;
         }
+
         .bp-sliders-grid {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
             gap: 12px;
         }
+
         .bp-slider-item {
             display: flex;
             flex-direction: column;
             gap: 4px;
         }
+
         .bp-slider-header {
             display: flex;
             justify-content: space-between;
@@ -5086,12 +5221,14 @@
             color: #94A3B8;
             font-weight: 600;
         }
+
         .bp-slider-item input[type=range] {
             width: 100%;
             accent-color: #6366F1;
             cursor: pointer;
             height: 4px;
         }
+
         .bp-photo-modal-footer {
             padding: 16px 24px 20px;
             border-top: 1px solid rgba(255, 255, 255, 0.08);
@@ -5099,6 +5236,7 @@
             align-items: center;
             gap: 10px;
         }
+
         .btn-danger-outline {
             background: rgba(239, 68, 68, 0.12);
             border: 1px solid rgba(239, 68, 68, 0.4);
@@ -5110,14 +5248,17 @@
             cursor: pointer;
             transition: all 0.15s ease;
         }
+
         .btn-danger-outline:hover {
             background: rgba(239, 68, 68, 0.25);
             color: #FFFFFF;
         }
+
         .bp-btn-save-photo {
             background: linear-gradient(135deg, #4F46E5, #7C3AED) !important;
             box-shadow: 0 4px 14px rgba(79, 70, 229, 0.4) !important;
         }
+
         .bp-btn-save-photo:disabled {
             opacity: 0.5;
             cursor: not-allowed;
@@ -6257,7 +6398,8 @@
                                         <circle cx="12" cy="7" r="4" />
                                     </svg>
                                     <input type="text" id="loginUsername" placeholder="silakan masukkan CSDM"
-                                        autocomplete="username" onkeydown="if(event.key==='Enter'){handleLogin(event);}" required>
+                                        autocomplete="username" onkeydown="if(event.key==='Enter'){handleLogin(event);}"
+                                        required>
                                 </div>
                             </div>
 
@@ -6269,8 +6411,10 @@
                                         <rect x="3" y="11" width="18" height="11" rx="2" ry="2" />
                                         <path d="M7 11V7a5 5 0 0110 0v4" />
                                     </svg>
-                                    <input type="password" id="loginPassword" placeholder="silakan masukkan password yang sudah didaftarkan"
-                                        autocomplete="current-password" onkeydown="if(event.key==='Enter'){handleLogin(event);}" required>
+                                    <input type="password" id="loginPassword"
+                                        placeholder="silakan masukkan password yang sudah didaftarkan"
+                                        autocomplete="current-password"
+                                        onkeydown="if(event.key==='Enter'){handleLogin(event);}" required>
                                     <button type="button" class="btn-toggle-eye" onclick="toggleLoginPassword()"
                                         title="Lihat password">
                                         <svg id="eyeIcon" width="16" height="16" viewBox="0 0 24 24" fill="none"
@@ -6480,7 +6624,8 @@
 
                 <div class="nav-section-label" style="margin-top: 14px;">Hall of Fame</div>
 
-                <button class="sidebar-nav-btn" id="navBtnBestPerform" onclick="switchMainView('bestPerform')" title="Best Perform CHO Fixed (Agent)">
+                <button class="sidebar-nav-btn" id="navBtnBestPerform" onclick="switchMainView('bestPerform')"
+                    title="Best Perform CHO Fixed (Agent)">
                     <div class="nav-icon-wrap icon-trophy-wrap">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <path d="M6 9H4.5a2.5 2.5 0 010-5H6" />
@@ -6494,15 +6639,19 @@
                     <span class="nav-trophy-tag">Agen ⭐</span>
                 </button>
 
-                <button class="sidebar-nav-btn" id="navBtnBestPerformTL" onclick="switchMainView('bestPerformTL')" title="Best Perform TL CHO Fixed (Populasi Team Leader)">
+                <button class="sidebar-nav-btn" id="navBtnBestPerformTL" onclick="switchMainView('bestPerformTL')"
+                    title="Best Perform TL CHO Fixed (Populasi Team Leader)">
                     <div class="nav-icon-wrap icon-trophy-wrap" style="color: #F59E0B;">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M2 4l3 12h14l3-12-6 7-4-7-4 7-6-7z" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M5 20h14" stroke-linecap="round"/>
+                            <path d="M2 4l3 12h14l3-12-6 7-4-7-4 7-6-7z" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M5 20h14" stroke-linecap="round" />
                         </svg>
                     </div>
                     <span class="nav-text">BP TL CHO Fixed</span>
-                    <span class="nav-trophy-tag" style="background: linear-gradient(135deg, #F59E0B, #D97706); box-shadow: 0 2px 6px rgba(245, 158, 11, 0.4);">TL 👑</span>
+                    <span class="nav-trophy-tag"
+                        style="background: linear-gradient(135deg, #F59E0B, #D97706); box-shadow: 0 2px 6px rgba(245, 158, 11, 0.4);">TL
+                        👑</span>
                 </button>
             </nav>
 
@@ -6553,7 +6702,8 @@
                         </span>
                     </span>
                     <span class="user-chip" id="userChip"></span>
-                    <button class="btn-api-status-pill" id="btnGasApiStatus" onclick="openGasConfigModal()" title="Konfigurasi URL Google Apps Script">
+                    <button class="btn-api-status-pill" id="btnGasApiStatus" onclick="openGasConfigModal()"
+                        title="Konfigurasi URL Google Apps Script">
                         <span class="status-dot-pulse" id="gasStatusDot"></span>
                         <span id="gasStatusText">Apps Script</span>
                     </button>
@@ -6696,13 +6846,16 @@
                 <div class="exec-summary-section" id="execSummarySection">
                     <div class="exec-section-header">
                         <div class="exec-header-left">
-                            <div class="section-heading" style="margin-bottom:0;">Executive Summary &amp; Rekomendasi Perbaikan</div>
+                            <div class="section-heading" style="margin-bottom:0;">Executive Summary &amp; Rekomendasi
+                                Perbaikan</div>
                             <span class="exec-badge-live">⚡ Analisis Cerdas Operasional</span>
                         </div>
                         <div class="exec-header-right">
                             <span class="exec-period-pill" id="execPeriodPill">Periode: -</span>
-                            <button type="button" class="btn-exec-action btn-exec-copy" onclick="copyExecutiveSummary()" title="Salin ringkasan ke clipboard">
-                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <button type="button" class="btn-exec-action btn-exec-copy" onclick="copyExecutiveSummary()"
+                                title="Salin ringkasan ke clipboard">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                     <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
                                     <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
                                 </svg>
@@ -6713,7 +6866,8 @@
 
                     <div class="exec-summary-panel" id="execSummaryPanel">
                         <div class="modal-empty" style="padding: 24px;">
-                            Pilih Tgl / Bulan / Tahun pada panel Detail di atas, lalu klik <strong>Terapkan</strong> untuk menampilkan Executive Summary &amp; Rekomendasi Perbaikan.
+                            Pilih Tgl / Bulan / Tahun pada panel Detail di atas, lalu klik <strong>Terapkan</strong>
+                            untuk menampilkan Executive Summary &amp; Rekomendasi Perbaikan.
                         </div>
                     </div>
                 </div>
@@ -6726,7 +6880,8 @@
                     <div class="bp-hero-text">
                         <!-- Mode Segmented Switcher (Agen vs TL) -->
                         <div class="bp-segmented-mode-wrap">
-                            <button type="button" class="bp-mode-chip active" id="bpModeChipAgent" onclick="setBPMode('agent')">
+                            <button type="button" class="bp-mode-chip active" id="bpModeChipAgent"
+                                onclick="setBPMode('agent')">
                                 <span class="chip-icon">👤</span>
                                 <span class="chip-text-full">Best Perform CHO Fixed</span>
                                 <span class="chip-text-mobile">BP Agen CHO</span>
@@ -6744,10 +6899,13 @@
                             <span>⭐</span>
                             <span>Hall of Fame &bull; Performance Leaderboard</span>
                         </div>
-                        <h2 class="bp-title" id="bpMainTitle">Best Perform <span class="brand-accent">CHO Fixed</span></h2>
-                        <p class="bp-subtitle" id="bpMainSubtitle">Apresiasi dan peringkat pencapaian tertinggi agen berdasarkan 8 metrik
+                        <h2 class="bp-title" id="bpMainTitle">Best Perform <span class="brand-accent">CHO Fixed</span>
+                        </h2>
+                        <p class="bp-subtitle" id="bpMainSubtitle">Apresiasi dan peringkat pencapaian tertinggi agen
+                            berdasarkan 10 metrik
                             analitik operasional.</p>
-                        <button type="button" class="bp-formula-trigger-btn" onclick="toggleBPFormulaCard()" id="btnToggleBPFormula" title="Klik untuk melihat penjelasan rumus penentuan peringkat">
+                        <button type="button" class="bp-formula-trigger-btn" onclick="toggleBPFormulaCard()"
+                            id="btnToggleBPFormula" title="Klik untuk melihat penjelasan rumus penentuan peringkat">
                             <span>📐</span>
                             <span id="bpFormulaBtnText">Rumus &amp; Kriteria Penentuan Juara</span>
                             <span class="arrow" id="bpFormulaArrow">▾</span>
@@ -6792,23 +6950,31 @@
                             <div class="bp-formula-title-wrap">
                                 <span class="bp-formula-icon">🏆</span>
                                 <div>
-                                    <h4 class="bp-formula-heading">Metodologi &amp; Rumus Penentuan Juara (Rank 1 - Overall)</h4>
-                                    <p class="bp-formula-subheading">Kalkulasi terstandarisasi untuk menjamin penilaian performa agen yang transparan, adil, dan objektif.</p>
+                                    <h4 class="bp-formula-heading">Metodologi &amp; Rumus Penentuan Juara (Rank 1 -
+                                        Overall)</h4>
+                                    <p class="bp-formula-subheading">Kalkulasi terstandarisasi untuk menjamin penilaian
+                                        performa agen yang transparan, adil, dan objektif.</p>
                                 </div>
                             </div>
-                            <button type="button" class="bp-formula-close-btn" onclick="toggleBPFormulaCard(false)" title="Tutup penjelasan rumus">&times;</button>
+                            <button type="button" class="bp-formula-close-btn" onclick="toggleBPFormulaCard(false)"
+                                title="Tutup penjelasan rumus">&times;</button>
                         </div>
 
                         <div class="bp-formula-grid">
-                            <!-- Card 1: 8 Pilar Metrik -->
+                            <!-- Card 1: 10 Pilar Metrik -->
                             <div class="bp-formula-box">
                                 <div class="bp-box-badge badge-blue">🎯 Pilar Penilaian</div>
-                                <h5>8 Metrik Operasional</h5>
-                                <p>Setiap agen dievaluasi di 8 metrik operasional terstandarisasi:</p>
+                                <h5>10 Metrik Operasional</h5>
+                                <p>Setiap agen dievaluasi di 10 metrik operasional terstandarisasi:</p>
                                 <ul class="bp-formula-list">
-                                    <li><span class="bullet positive">▲</span> <strong>6 Metrik Prestasi Ranking:</strong> Produktivitas, Closed Rate, Callback Rate, QA Score, Badtiket (%), &amp; Kehadiran (%).</li>
-                                    <li><span class="bullet efficiency">▼</span> <strong>1 Metrik Efisiensi Ranking:</strong> AHT / Average Handling Time <em>(makin cepat makin tinggi poin)</em>.</li>
-                                    <li><span class="bullet positive">🎯</span> <strong>1 Metrik Berbasis Skoring Target:</strong> Staff Time (Target 07:45:00).</li>
+                                    <li><span class="bullet positive">▲</span> <strong>6 Metrik Prestasi
+                                            Ranking:</strong> Produktivitas, Closed Rate, Callback Rate, QA Score,
+                                        Badtiket (%), &amp; Kehadiran (%).</li>
+                                    <li><span class="bullet efficiency">▼</span> <strong>2 Metrik Efisiensi
+                                            Ranking:</strong> AHT (Average Handling Time) &amp; Ratio BA (%) <em>(makin rendah makin tinggi
+                                            poin)</em>.</li>
+                                    <li><span class="bullet positive">🎯</span> <strong>2 Metrik Berbasis Skoring
+                                            Target:</strong> Staff Time (Target 07:45:00) &amp; Effective Time (Target 07:00:00).</li>
                                 </ul>
                             </div>
 
@@ -6817,20 +6983,23 @@
                                 <div class="bp-box-badge badge-purple">🎖️ Sistem Poin &amp; Skoring</div>
                                 <h5>Kriteria Skoring Metrik (Skala 10–100 Pts / Skor 1–10)</h5>
                                 <ul class="bp-formula-list" style="margin-top: 6px;">
-                                    <li><strong>Metrik Ranking (Prod, Closed, CB, QA, Hadir, Badtiket, AHT):</strong><br><code>Poin = Max(10, 100 - (Rank - 1) × 5)</code><br>Rank 1 = 100 Pts, Rank 2 = 95 Pts, dst.</li>
-                                    <li><strong>Staff Time (Target 07:45:00):</strong><br>&ge;07:45:00: 100 Pts (Skor 10), &ge;07:40:00: 90 Pts (Skor 9), &ge;07:30:00: 80 Pts (Skor 8), &ge;07:20:00: 70 Pts (Skor 7), &ge;07:10:00: 60 Pts, &ge;07:00:00: 50 Pts, &lt;07:00:00: 10 Pts (Skor 1).</li>
+                                    <li><strong>Metrik Ranking (Prod, Closed, CB, QA, Hadir, Badtiket, AHT, Ratio BA):</strong><br><code>Poin = Max(10, 100 - (Rank - 1) × 5)</code><br>Rank
+                                        1 = 100 Pts, Rank 2 = 95 Pts, dst.</li>
+                                    <li><strong>Staff Time (&ge;07:45:00) &amp; Effective Time (&ge;07:00:00):</strong><br>Skoring berjenjang berbasis target durasi harian (10–100 Pts).</li>
                                 </ul>
                             </div>
 
                             <!-- Card 3: Penentuan Overall Score -->
                             <div class="bp-formula-box">
                                 <div class="bp-box-badge badge-gold">👑 Penentuan Juara 1</div>
-                                <h5>Overall Score (Rata-rata 8 Metrik)</h5>
-                                <p>Skor akumulasi adalah rata-rata poin dari ke-8 metrik:</p>
+                                <h5>Overall Score (Rata-rata 10 Metrik)</h5>
+                                <p>Skor akumulasi adalah rata-rata poin dari ke-10 metrik:</p>
                                 <div class="bp-formula-formula-tag formula-highlight">
-                                    <code>Overall Score = (∑ Poin 8 Metrik) / 8</code>
+                                    <code>Overall Score = (∑ Poin 10 Metrik) / 10</code>
                                 </div>
-                                <p style="font-size: 11.5px; margin-top: 6px; color: var(--text-dim);">Agen dengan Overall Score tertinggi dinobatkan sebagai <strong>Rank 1 (Champion)</strong> dan menempati podium emas teratas.</p>
+                                <p style="font-size: 11.5px; margin-top: 6px; color: var(--text-dim);">Agen dengan
+                                    Overall Score tertinggi dinobatkan sebagai <strong>Rank 1 (Champion)</strong> dan
+                                    menempati podium emas teratas.</p>
                             </div>
 
                             <!-- Card 4: Tie-Breaker Rule -->
@@ -6839,22 +7008,27 @@
                                 <h5>Keunggulan Top 1 Metrik</h5>
                                 <p>Apabila terdapat agen dengan perolehan Overall Score yang sama persis:</p>
                                 <div class="bp-tiebreaker-box">
-                                    <span>Peringkat diprioritaskan untuk agen dengan perolehan <strong>Top 1 terbanyak</strong> (juara 1 di masing-masing metrik individual).</span>
+                                    <span>Peringkat diprioritaskan untuk agen dengan perolehan <strong>Top 1
+                                            terbanyak</strong> (juara 1 di masing-masing metrik individual).</span>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Metric Selector Tabs (Overall + 8 Metrik) -->
+                <!-- Metric Selector Tabs (Overall + 10 Metrik) -->
                 <div class="bp-metric-nav" id="bpMetricNav">
                     <button class="bp-tab-btn active" data-metric="overall" onclick="setActiveBPMetric('overall')">
                         <span>🌟</span>
-                        <span>Overall (8 Metrik)</span>
+                        <span>Overall (10 Metrik)</span>
                     </button>
                     <button class="bp-tab-btn" data-metric="staffTime" onclick="setActiveBPMetric('staffTime')">
                         <span>⏳</span>
                         <span>Staff Time</span>
+                    </button>
+                    <button class="bp-tab-btn" data-metric="effectiveTime" onclick="setActiveBPMetric('effectiveTime')">
+                        <span>⏱️</span>
+                        <span>Effective Time</span>
                     </button>
                     <button class="bp-tab-btn" data-metric="produktivity" onclick="setActiveBPMetric('produktivity')">
                         <span>📈</span>
@@ -6884,18 +7058,27 @@
                         <span>📅</span>
                         <span>Kehadiran</span>
                     </button>
+                    <button class="bp-tab-btn" data-metric="ratioBa" onclick="setActiveBPMetric('ratioBa')">
+                        <span>📊</span>
+                        <span>Ratio BA</span>
+                    </button>
                 </div>
 
                 <!-- Active Metric Info Banner & Interactive Month Filter -->
                 <div class="bp-active-info-bar">
                     <div class="bp-info-main-row">
                         <div class="bp-info-title-group">
-                            <span class="bp-current-metric-name" id="bpMetricDisplayTitle">Overall Performance (8 Metrik)</span>
-                            <span class="bp-current-metric-period" id="bpMetricDisplayPeriod">Periode: Semua Bulan</span>
-                            <button type="button" class="bp-mini-info-btn" onclick="toggleBPFormulaCard(true)" title="Pelajari cara perhitungan Overall Rank &amp; Juara 1">
+                            <span class="bp-current-metric-name" id="bpMetricDisplayTitle">Overall Performance (10
+                                Metrik)</span>
+                            <span class="bp-current-metric-period" id="bpMetricDisplayPeriod">Periode: Semua
+                                Bulan</span>
+                            <button type="button" class="bp-mini-info-btn" onclick="toggleBPFormulaCard(true)"
+                                title="Pelajari cara perhitungan Overall Rank &amp; Juara 1">
                                 ℹ️ Rumus Pemenang
                             </button>
-                            <button type="button" class="bp-mini-info-btn bp-photo-manage-btn" id="bpManagePhotoBtn" onclick="openPhotoUploadModal()" style="display:none;" title="Upload/Kelola Foto Profil Agen &amp; TL (Superadmin)">
+                            <button type="button" class="bp-mini-info-btn bp-photo-manage-btn" id="bpManagePhotoBtn"
+                                onclick="openPhotoUploadModal()" style="display:none;"
+                                title="Upload/Kelola Foto Profil Agen &amp; TL (Superadmin)">
                                 📷 Kelola Foto
                             </button>
                         </div>
@@ -6907,11 +7090,16 @@
                         <div class="bp-filter-group-item">
                             <span class="bp-filter-tag">Kuartal:</span>
                             <div class="bp-quartal-chips" id="bpQuartalChips">
-                                <button type="button" class="bp-quartal-chip active" data-quartal="All" onclick="selectBPQuartal('All')">Semua</button>
-                                <button type="button" class="bp-quartal-chip" data-quartal="Q1" onclick="selectBPQuartal('Q1')" title="Q1 : Jan - Mar">Q1</button>
-                                <button type="button" class="bp-quartal-chip" data-quartal="Q2" onclick="selectBPQuartal('Q2')" title="Q2 : Apr - Jun">Q2</button>
-                                <button type="button" class="bp-quartal-chip" data-quartal="Q3" onclick="selectBPQuartal('Q3')" title="Q3 : Jul - Sept">Q3</button>
-                                <button type="button" class="bp-quartal-chip" data-quartal="Q4" onclick="selectBPQuartal('Q4')" title="Q4 : Oct - Dec">Q4</button>
+                                <button type="button" class="bp-quartal-chip active" data-quartal="All"
+                                    onclick="selectBPQuartal('All')">Semua</button>
+                                <button type="button" class="bp-quartal-chip" data-quartal="Q1"
+                                    onclick="selectBPQuartal('Q1')" title="Q1 : Jan - Mar">Q1</button>
+                                <button type="button" class="bp-quartal-chip" data-quartal="Q2"
+                                    onclick="selectBPQuartal('Q2')" title="Q2 : Apr - Jun">Q2</button>
+                                <button type="button" class="bp-quartal-chip" data-quartal="Q3"
+                                    onclick="selectBPQuartal('Q3')" title="Q3 : Jul - Sept">Q3</button>
+                                <button type="button" class="bp-quartal-chip" data-quartal="Q4"
+                                    onclick="selectBPQuartal('Q4')" title="Q4 : Oct - Dec">Q4</button>
                             </div>
                         </div>
 
@@ -7010,7 +7198,8 @@
                     <div class="um-add-form">
                         <div class="filter-field">
                             <label id="umUsernameLabel">Username</label>
-                            <input type="text" id="umNewUsername" class="dark-input" placeholder="Username (mis. 12345678)">
+                            <input type="text" id="umNewUsername" class="dark-input"
+                                placeholder="Username (mis. 12345678)">
                         </div>
                         <div class="filter-field">
                             <label>Nama</label>
@@ -7029,7 +7218,8 @@
                         </div>
                         <button class="btn-apply" onclick="submitCreateUser()">+ Tambah User</button>
                     </div>
-                    <div class="um-note" id="umFormNote" style="display:none;">Username untuk role "view" memakai kode CSDM
+                    <div class="um-note" id="umFormNote" style="display:none;">Username untuk role "view" memakai kode
+                        CSDM
                         karyawan. Role dapat diubah sewaktu-waktu oleh superadmin melalui tabel di bawah.</div>
                     <div id="umTableWrap" style="margin-top:16px;">
                         <div class="modal-loading">Memuat data...</div>
@@ -7048,21 +7238,32 @@
                         </div>
                         <div class="um-log-field flex-grow">
                             <label>Cari Aktivitas</label>
-                            <input type="text" id="umLogSearchInput" class="dark-input" placeholder="Cari aktivitas, metrik, detail, atau tanggal..." oninput="filterActivityLogs()">
+                            <input type="text" id="umLogSearchInput" class="dark-input"
+                                placeholder="Cari aktivitas, metrik, detail, atau tanggal..."
+                                oninput="filterActivityLogs()">
                         </div>
                         <div class="um-log-field action-field">
                             <label>Aksi</label>
                             <div class="um-log-btn-group">
-                                <button type="button" id="btnRefreshLogs" class="btn-log-action btn-log-refresh" onclick="loadActivityLogs()" title="Muat ulang log aktivitas dari server">
-                                    <svg class="btn-log-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
-                                        <path d="M21.5 2v6h-6M2.5 22v-6h6M2 11.5a10 10 0 0 1 18.8-4.3M22 12.5a10 10 0 0 1-18.8 4.2"/>
+                                <button type="button" id="btnRefreshLogs" class="btn-log-action btn-log-refresh"
+                                    onclick="loadActivityLogs()" title="Muat ulang log aktivitas dari server">
+                                    <svg class="btn-log-icon" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2.3" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <path
+                                            d="M21.5 2v6h-6M2.5 22v-6h6M2 11.5a10 10 0 0 1 18.8-4.3M22 12.5a10 10 0 0 1-18.8 4.2" />
                                     </svg>
                                     <span>Segarkan</span>
                                 </button>
-                                <button type="button" id="btnClearLogs" class="btn-log-action btn-log-clear" onclick="confirmClearActivityLogs()" title="Hapus seluruh riwayat log aktivitas">
-                                    <svg class="btn-log-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                                <button type="button" id="btnClearLogs" class="btn-log-action btn-log-clear"
+                                    onclick="confirmClearActivityLogs()" title="Hapus seluruh riwayat log aktivitas">
+                                    <svg class="btn-log-icon" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
+                                        stroke-linejoin="round">
                                         <polyline points="3 6 5 6 21 6"></polyline>
-                                        <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"></path>
+                                        <path
+                                            d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2">
+                                        </path>
                                         <line x1="10" y1="11" x2="10" y2="17"></line>
                                         <line x1="14" y1="11" x2="14" y2="17"></line>
                                     </svg>
@@ -7083,7 +7284,8 @@
                             <span class="log-stat-lbl">User View Terpantau</span>
                         </div>
                         <div class="log-stat-card">
-                            <span class="log-stat-num" id="logStatLatestTime" style="font-size:13px; font-weight:600;">-</span>
+                            <span class="log-stat-num" id="logStatLatestTime"
+                                style="font-size:13px; font-weight:600;">-</span>
                             <span class="log-stat-lbl">Aktivitas Terakhir</span>
                         </div>
                     </div>
@@ -7107,7 +7309,8 @@
             <div class="um-edit-body">
                 <div class="um-edit-field">
                     <label>Username (ID CSDM)</label>
-                    <input type="text" id="editUmUsername" class="dark-input" readonly style="opacity:0.75; cursor:not-allowed;">
+                    <input type="text" id="editUmUsername" class="dark-input" readonly
+                        style="opacity:0.75; cursor:not-allowed;">
                 </div>
                 <div class="um-edit-field">
                     <label>Nama Lengkap</label>
@@ -7117,15 +7320,18 @@
                     <label style="color: #C4B5FD;">Role / Hak Akses</label>
                     <select id="editUmRole" class="dark-select" onchange="onEditRoleChange()">
                         <option value="view">view — Pengguna CSDM (hanya melihat dashboard &amp; metrik)</option>
-                        <option value="superadmin">superadmin — Administrator Penuh (kelola user &amp; pantau log aktivitas)</option>
+                        <option value="superadmin">superadmin — Administrator Penuh (kelola user &amp; pantau log
+                            aktivitas)</option>
                     </select>
                     <div class="um-field-tip" id="editRoleTip">
-                        💡 Role <strong>superadmin</strong> memiliki akses penuh mengelola pengguna dan memantau log aktivitas user view.
+                        💡 Role <strong>superadmin</strong> memiliki akses penuh mengelola pengguna dan memantau log
+                        aktivitas user view.
                     </div>
                 </div>
                 <div class="um-edit-field">
                     <label>Reset Password (Opsional)</label>
-                    <input type="password" id="editUmPassword" class="dark-input" placeholder="Kosongkan jika password tidak diubah">
+                    <input type="password" id="editUmPassword" class="dark-input"
+                        placeholder="Kosongkan jika password tidak diubah">
                 </div>
             </div>
             <div class="um-edit-footer">
@@ -7143,7 +7349,8 @@
                     <div class="bp-photo-modal-icon">📸</div>
                     <div>
                         <h3 class="bp-photo-modal-title">Upload Foto Profil Juara</h3>
-                        <p class="bp-photo-modal-subtitle">Auto Remove Background untuk BP CHO Fixed &amp; BP TL CHO Fixed</p>
+                        <p class="bp-photo-modal-subtitle">Auto Remove Background untuk BP CHO Fixed &amp; BP TL CHO
+                            Fixed</p>
                     </div>
                 </div>
                 <button type="button" class="bp-photo-close-btn" onclick="closePhotoUploadModal()">&times;</button>
@@ -7155,25 +7362,30 @@
                     <div class="bp-photo-field">
                         <label class="bp-photo-label">Kategori</label>
                         <div class="bp-photo-type-toggle">
-                            <button type="button" class="bp-type-btn active" id="btnPhotoTypeAgent" onclick="setPhotoModalType('agent')">
+                            <button type="button" class="bp-type-btn active" id="btnPhotoTypeAgent"
+                                onclick="setPhotoModalType('agent')">
                                 👤 Agen CHO
                             </button>
-                            <button type="button" class="bp-type-btn" id="btnPhotoTypeTL" onclick="setPhotoModalType('tl')">
+                            <button type="button" class="bp-type-btn" id="btnPhotoTypeTL"
+                                onclick="setPhotoModalType('tl')">
                                 👑 Team Leader
                             </button>
                         </div>
                     </div>
                     <div class="bp-photo-field" style="flex: 1.5;">
                         <label class="bp-photo-label" id="photoSelectNameLabel">Nama Agen</label>
-                        <select id="photoTargetNameSelect" class="dark-select bp-photo-select" onchange="onPhotoTargetNameChange()">
+                        <select id="photoTargetNameSelect" class="dark-select bp-photo-select"
+                            onchange="onPhotoTargetNameChange()">
                             <!-- Diisi dinamis -->
                         </select>
                     </div>
                 </div>
 
                 <!-- 2. Dropzone Upload Foto -->
-                <div class="bp-photo-dropzone" id="bpPhotoDropzone" onclick="document.getElementById('photoFileInput').click()">
-                    <input type="file" id="photoFileInput" accept="image/png, image/jpeg, image/jpg, image/webp" style="display: none;" onchange="handlePhotoFileSelected(this.files)">
+                <div class="bp-photo-dropzone" id="bpPhotoDropzone"
+                    onclick="document.getElementById('photoFileInput').click()">
+                    <input type="file" id="photoFileInput" accept="image/png, image/jpeg, image/jpg, image/webp"
+                        style="display: none;" onchange="handlePhotoFileSelected(this.files)">
                     <div class="bp-dropzone-content">
                         <div class="bp-dropzone-icon">✨📁</div>
                         <div class="bp-dropzone-text">
@@ -7224,7 +7436,8 @@
                     <div class="bp-photo-adjustments">
                         <div class="bp-adjust-toggle-row">
                             <label class="bp-switch-label">
-                                <input type="checkbox" id="photoRemoveBgToggle" checked onchange="togglePhotoBgRemoval(this.checked)">
+                                <input type="checkbox" id="photoRemoveBgToggle" checked
+                                    onchange="togglePhotoBgRemoval(this.checked)">
                                 <span class="bp-switch-slider"></span>
                                 <span class="bp-switch-text">Hapus Latar Belakang (Transparan)</span>
                             </label>
@@ -7237,21 +7450,24 @@
                                     <span>Toleransi Background</span>
                                     <span id="toleranceValDisplay">35</span>
                                 </div>
-                                <input type="range" id="photoToleranceSlider" min="10" max="80" value="35" oninput="onToleranceSliderChange(this.value)">
+                                <input type="range" id="photoToleranceSlider" min="10" max="80" value="35"
+                                    oninput="onToleranceSliderChange(this.value)">
                             </div>
                             <div class="bp-slider-item">
                                 <div class="bp-slider-header">
                                     <span>Skala / Zoom Wajah</span>
                                     <span id="zoomValDisplay">100%</span>
                                 </div>
-                                <input type="range" id="photoZoomSlider" min="70" max="180" value="100" oninput="onZoomSliderChange(this.value)">
+                                <input type="range" id="photoZoomSlider" min="70" max="180" value="100"
+                                    oninput="onZoomSliderChange(this.value)">
                             </div>
                             <div class="bp-slider-item">
                                 <div class="bp-slider-header">
                                     <span>Posisi Vertikal (Geser)</span>
                                     <span id="offsetYValDisplay">0px</span>
                                 </div>
-                                <input type="range" id="photoOffsetYSlider" min="-50" max="50" value="0" oninput="onOffsetYSliderChange(this.value)">
+                                <input type="range" id="photoOffsetYSlider" min="-50" max="50" value="0"
+                                    oninput="onOffsetYSliderChange(this.value)">
                             </div>
                         </div>
                     </div>
@@ -7259,14 +7475,16 @@
             </div>
 
             <div class="bp-photo-modal-footer">
-                <button type="button" class="btn-danger-outline" id="btnDeletePhoto" onclick="deleteCurrentPersonPhoto()" style="display: none;">
+                <button type="button" class="btn-danger-outline" id="btnDeletePhoto"
+                    onclick="deleteCurrentPersonPhoto()" style="display: none;">
                     🗑️ Hapus Foto
                 </button>
                 <div style="flex: 1;"></div>
                 <button type="button" class="btn-secondary" onclick="closePhotoUploadModal()">
                     Batal
                 </button>
-                <button type="button" class="btn-apply bp-btn-save-photo" id="btnSavePhoto" onclick="saveCurrentPersonPhoto()" disabled>
+                <button type="button" class="btn-apply bp-btn-save-photo" id="btnSavePhoto"
+                    onclick="saveCurrentPersonPhoto()" disabled>
                     💾 Simpan Foto Profil
                 </button>
             </div>
@@ -7299,10 +7517,13 @@
                 <div class="input-field-group" style="margin-top: 14px;">
                     <label class="input-field-label" for="gasUrlInput">URL Web App Google Apps Script</label>
                     <div class="glass-input-box">
-                        <input type="url" id="gasUrlInput" placeholder="https://script.google.com/macros/s/AKfyc.../exec" autocomplete="off" style="font-size: 13px; font-family: monospace;">
+                        <input type="url" id="gasUrlInput"
+                            placeholder="https://script.google.com/macros/s/AKfyc.../exec" autocomplete="off"
+                            style="font-size: 13px; font-family: monospace;">
                     </div>
                     <div style="font-size: 11px; color: var(--text-dim); margin-top: 6px; line-height: 1.4;">
-                        Salin URL deployment dari menu <strong>Deploy &gt; Manage deployments</strong> di Google Apps Script (berakhiran <code>/exec</code>).
+                        Salin URL deployment dari menu <strong>Deploy &gt; Manage deployments</strong> di Google Apps
+                        Script (berakhiran <code>/exec</code>).
                     </div>
                 </div>
 
@@ -7311,12 +7532,15 @@
                 <div class="gas-guide-card">
                     <div class="gas-guide-title">📋 Cara Mendapatkan URL Web App di Google Apps Script:</div>
                     <ol class="gas-guide-list">
-                        <li>Buka project Google Apps Script di <a href="https://script.google.com" target="_blank" style="color: #A78BFA; text-decoration: underline;">script.google.com</a></li>
+                        <li>Buka project Google Apps Script di <a href="https://script.google.com" target="_blank"
+                                style="color: #A78BFA; text-decoration: underline;">script.google.com</a></li>
                         <li>Pastikan kode terbaru dari file <code>Code.gs</code> sudah disimpan</li>
                         <li>Klik <strong>Deploy &gt; Manage deployments &gt; Edit (ikon pensil)</strong></li>
                         <li>Pilih <strong>Version: New version</strong></li>
-                        <li>Pastikan <strong>Execute as: Me</strong> dan <strong>Who has access: Anyone</strong> (Siapa saja)</li>
-                        <li>Klik <strong>Deploy</strong> lalu salin URL Web App yang berakhiran <code>/exec</code> ke kolom di atas.</li>
+                        <li>Pastikan <strong>Execute as: Me</strong> dan <strong>Who has access: Anyone</strong> (Siapa
+                            saja)</li>
+                        <li>Klik <strong>Deploy</strong> lalu salin URL Web App yang berakhiran <code>/exec</code> ke
+                            kolom di atas.</li>
                     </ol>
                 </div>
             </div>
@@ -7453,7 +7677,7 @@
                     getBestPerformBundle: function (filters) {
                         setTimeout(function () {
                             const realAgents = [
-                                { name: 'ALDI HENDRAWAN', tl: 'ALFI RISKIANA', pBase: 32.5, cBase: 95.2, cbBase: 2.1, hBase: 92.4, ahtBase: 205, qBase: 98.2, stBase: 29400, nBase: 98.5, btBase: 100, kBase: 99.4 },
+                                { name: 'ALDI HENDRAWAN', tl: 'ALFI RISKIANA', pBase: 32.5, cBase: 95.2, cbBase: 2.1, hBase: 92.4, ahtBase: 205, qBase: 98.2, stBase: 29400, etBase: 26500, nBase: 98.5, btBase: 100, kBase: 99.4, rbaBase: 2.1 },
                                 { name: 'AMMY LARASATI', tl: 'ALFI RISKIANA', pBase: 31.8, cBase: 94.0, cbBase: 2.4, hBase: 91.0, ahtBase: 215, qBase: 97.5, stBase: 29100, nBase: 97.8, btBase: 100, kBase: 99.0 },
                                 { name: 'ATIKA ISLAMI', tl: 'ALFI RISKIANA', pBase: 30.2, cBase: 92.5, cbBase: 2.7, hBase: 89.5, ahtBase: 228, qBase: 96.8, stBase: 28800, nBase: 97.2, btBase: 100, kBase: 98.6 },
                                 { name: 'Andika Putra Ramadhan', tl: 'ALFI RISKIANA', pBase: 29.5, cBase: 91.8, cbBase: 3.0, hBase: 88.0, ahtBase: 235, qBase: 96.0, stBase: 28500, nBase: 96.5, btBase: 100, kBase: 98.2 },
@@ -7470,16 +7694,18 @@
                                 { name: 'Waasi Noorsatria Adhie', tl: 'ALFI RISKIANA', pBase: 23.8, cBase: 83.0, cbBase: 5.8, hBase: 80.0, ahtBase: 318, qBase: 90.5, stBase: 26200, nBase: 89.5, btBase: 50, kBase: 91.0 }
                             ];
 
-                            const mKeys = ['staffTime', 'produktivity', 'closedRate', 'callbackRate', 'aht', 'badtiket', 'qaScore', 'kehadiran'];
+                            const mKeys = ['staffTime', 'effectiveTime', 'produktivity', 'closedRate', 'callbackRate', 'aht', 'badtiket', 'qaScore', 'kehadiran', 'ratioBa'];
                             const metrics = {
                                 staffTime: { label: 'Staff Time', unit: 'hms', ranked: [] },
+                                effectiveTime: { label: 'Effective Time', unit: 'hms', ranked: [] },
                                 produktivity: { label: 'AVG Produktivity', unit: 'number', ranked: [] },
                                 closedRate: { label: 'Closed Rate', unit: 'percent', ranked: [] },
                                 callbackRate: { label: 'Callback Rate', unit: 'percent', ranked: [] },
                                 aht: { label: 'AHT', unit: 'time', ranked: [] },
                                 badtiket: { label: 'Badtiket', unit: 'percent', ranked: [] },
                                 qaScore: { label: 'QA Score', unit: 'number', ranked: [] },
-                                kehadiran: { label: 'Kehadiran', unit: 'percent', ranked: [] }
+                                kehadiran: { label: 'Kehadiran', unit: 'percent', ranked: [] },
+                                ratioBa: { label: 'Ratio BA', unit: 'percent', ranked: [] }
                             };
 
                             const overall = [];
@@ -7488,27 +7714,32 @@
                             const mShift = (filters && filters.bulan === 'July') ? 1.5 : (filters && filters.bulan === 'August') ? -0.8 : (filters && filters.bulan === 'September') ? 0.6 : 0;
 
                             realAgents.forEach((a, idx) => {
-                                const stVal = Math.round(a.stBase + (mShift * 120));
+                                const stVal = Math.round((a.stBase || 28000) + (mShift * 120));
+                                const etVal = Math.round((a.etBase || 25500) + (mShift * 110));
                                 const pVal = +(a.pBase + mShift + ((idx % 3) * 0.4)).toFixed(1);
                                 const cVal = +(Math.min(99, a.cBase + (mShift * 0.5))).toFixed(1);
                                 const cbVal = +(Math.max(1, a.cbBase - (mShift * 0.2))).toFixed(1);
                                 const ahtVal = Math.round(Math.max(180, a.ahtBase - (mShift * 10)));
-                                const btVal = Math.max(0, Math.round(a.btBase));
+                                const btVal = a.btBase !== undefined ? Math.max(0, +(100 - a.btBase).toFixed(1)) : 0;
                                 const qVal = +(Math.min(100, a.qBase + (mShift * 0.3))).toFixed(1);
                                 const kVal = +(Math.min(100, Math.max(70, a.kBase + (mShift * 0.3)))).toFixed(1);
+                                const rbaVal = +(Math.max(0.5, (a.rbaBase || 2.5) + (mShift * 0.2))).toFixed(1);
 
                                 const mV = {
                                     staffTime: stVal,
+                                    effectiveTime: etVal,
                                     produktivity: pVal,
                                     closedRate: cVal,
                                     callbackRate: cbVal,
                                     aht: ahtVal,
                                     badtiket: btVal,
                                     qaScore: qVal,
-                                    kehadiran: kVal
+                                    kehadiran: kVal,
+                                    ratioBa: rbaVal
                                 };
 
                                 metrics.staffTime.ranked.push({ rank: idx + 1, agent: a.name, tl: a.tl, value: stVal, unit: 'hms', metricValues: mV });
+                                metrics.effectiveTime.ranked.push({ rank: idx + 1, agent: a.name, tl: a.tl, value: etVal, unit: 'hms', metricValues: mV });
                                 metrics.produktivity.ranked.push({ rank: idx + 1, agent: a.name, tl: a.tl, value: pVal, unit: 'number', metricValues: mV });
                                 metrics.closedRate.ranked.push({ rank: idx + 1, agent: a.name, tl: a.tl, value: cVal, unit: 'percent', metricValues: mV });
                                 metrics.callbackRate.ranked.push({ rank: idx + 1, agent: a.name, tl: a.tl, value: cbVal, unit: 'percent', metricValues: mV });
@@ -7516,6 +7747,7 @@
                                 metrics.badtiket.ranked.push({ rank: idx + 1, agent: a.name, tl: a.tl, value: btVal, unit: 'percent', metricValues: mV });
                                 metrics.qaScore.ranked.push({ rank: idx + 1, agent: a.name, tl: a.tl, value: qVal, unit: 'number', metricValues: mV });
                                 metrics.kehadiran.ranked.push({ rank: idx + 1, agent: a.name, tl: a.tl, value: kVal, unit: 'percent', metricValues: mV });
+                                metrics.ratioBa.ranked.push({ rank: idx + 1, agent: a.name, tl: a.tl, value: rbaVal, unit: 'percent', metricValues: mV });
 
                                 const ovScore = +(Math.max(40, 98.5 - (idx * 2.2) + mShift)).toFixed(1);
                                 overall.push({ rank: idx + 1, agent: a.name, tl: a.tl, value: ovScore, unit: 'score', metricValues: mV });
@@ -7525,27 +7757,32 @@
                             function buildRankingsForMonth(shift) {
                                 const m = {
                                     staffTime: { label: 'Staff Time', unit: 'hms', ranked: [] },
+                                    effectiveTime: { label: 'Effective Time', unit: 'hms', ranked: [] },
                                     produktivity: { label: 'AVG Produktivity', unit: 'number', ranked: [] },
                                     closedRate: { label: 'Closed Rate', unit: 'percent', ranked: [] },
                                     callbackRate: { label: 'Callback Rate', unit: 'percent', ranked: [] },
                                     aht: { label: 'AHT', unit: 'time', ranked: [] },
                                     badtiket: { label: 'Badtiket', unit: 'percent', ranked: [] },
                                     qaScore: { label: 'QA Score', unit: 'number', ranked: [] },
-                                    kehadiran: { label: 'Kehadiran', unit: 'percent', ranked: [] }
+                                    kehadiran: { label: 'Kehadiran', unit: 'percent', ranked: [] },
+                                    ratioBa: { label: 'Ratio BA', unit: 'percent', ranked: [] }
                                 };
                                 const ov = [];
                                 realAgents.forEach((a, idx) => {
-                                    const stVal = Math.round(a.stBase + (shift * 120));
+                                    const stVal = Math.round((a.stBase || 28000) + (shift * 120));
+                                    const etVal = Math.round((a.etBase || 25500) + (shift * 110));
                                     const pVal = +(a.pBase + shift + ((idx % 3) * 0.4)).toFixed(1);
                                     const cVal = +(Math.min(99, a.cBase + (shift * 0.5))).toFixed(1);
                                     const cbVal = +(Math.max(1, a.cbBase - (shift * 0.2))).toFixed(1);
                                     const ahtVal = Math.round(Math.max(180, a.ahtBase - (shift * 10)));
-                                    const btVal = Math.max(0, Math.round(a.btBase));
+                                    const btVal = a.btBase !== undefined ? Math.max(0, +(100 - a.btBase).toFixed(1)) : 0;
                                     const qVal = +(Math.min(100, a.qBase + (shift * 0.3))).toFixed(1);
                                     const kVal = +(Math.min(100, Math.max(70, a.kBase + (shift * 0.3)))).toFixed(1);
+                                    const rbaVal = +(Math.max(0.5, (a.rbaBase || 2.5) + (shift * 0.2))).toFixed(1);
 
-                                    const mV = { staffTime: stVal, produktivity: pVal, closedRate: cVal, callbackRate: cbVal, aht: ahtVal, badtiket: btVal, qaScore: qVal, kehadiran: kVal };
+                                    const mV = { staffTime: stVal, effectiveTime: etVal, produktivity: pVal, closedRate: cVal, callbackRate: cbVal, aht: ahtVal, badtiket: btVal, qaScore: qVal, kehadiran: kVal, ratioBa: rbaVal };
                                     m.staffTime.ranked.push({ rank: idx + 1, agent: a.name, tl: a.tl, value: stVal, unit: 'hms', metricValues: mV });
+                                    m.effectiveTime.ranked.push({ rank: idx + 1, agent: a.name, tl: a.tl, value: etVal, unit: 'hms', metricValues: mV });
                                     m.produktivity.ranked.push({ rank: idx + 1, agent: a.name, tl: a.tl, value: pVal, unit: 'number', metricValues: mV });
                                     m.closedRate.ranked.push({ rank: idx + 1, agent: a.name, tl: a.tl, value: cVal, unit: 'percent', metricValues: mV });
                                     m.callbackRate.ranked.push({ rank: idx + 1, agent: a.name, tl: a.tl, value: cbVal, unit: 'percent', metricValues: mV });
@@ -7553,6 +7790,7 @@
                                     m.badtiket.ranked.push({ rank: idx + 1, agent: a.name, tl: a.tl, value: btVal, unit: 'percent', metricValues: mV });
                                     m.qaScore.ranked.push({ rank: idx + 1, agent: a.name, tl: a.tl, value: qVal, unit: 'number', metricValues: mV });
                                     m.kehadiran.ranked.push({ rank: idx + 1, agent: a.name, tl: a.tl, value: kVal, unit: 'percent', metricValues: mV });
+                                    m.ratioBa.ranked.push({ rank: idx + 1, agent: a.name, tl: a.tl, value: rbaVal, unit: 'percent', metricValues: mV });
 
                                     const ovScore = +(Math.max(40, 98.5 - (idx * 2.2) + shift)).toFixed(1);
                                     ov.push({ rank: idx + 1, agent: a.name, tl: a.tl, value: ovScore, unit: 'score', metricValues: mV });
@@ -7672,6 +7910,23 @@
                                             { bulan: 'October 2026', value: 29160 }
                                         ]
                                     },
+                                    effectiveTime: {
+                                        label: 'Effective Time',
+                                        icon: 'effectivetime',
+                                        unit: 'hms',
+                                        average: 26100, // 07:15:00
+                                        achieveCount: 36,
+                                        totalAgents: 41,
+                                        achievePercent: 87.8,
+                                        achieveText: '36/41',
+                                        targetLabel: '>= 07:00:00',
+                                        trend: [
+                                            { bulan: 'July 2026', value: 25300 },
+                                            { bulan: 'August 2026', value: 25600 },
+                                            { bulan: 'September 2026', value: 25900 },
+                                            { bulan: 'October 2026', value: 26100 }
+                                        ]
+                                    },
                                     produktivity: {
                                         label: 'AVG Produktivity',
                                         icon: 'productivity',
@@ -7744,13 +7999,18 @@
                                         label: 'Badtiket',
                                         icon: 'badtiket',
                                         unit: 'percent',
-                                        average: null,
-                                        achieveCount: 0,
-                                        totalAgents: 0,
-                                        achievePercent: 0,
-                                        achieveText: '-',
-                                        targetLabel: '100%',
-                                        trend: []
+                                        average: 11.7,
+                                        achieveCount: 28,
+                                        totalAgents: 47,
+                                        achievePercent: 59.6,
+                                        achieveText: '28/47',
+                                        targetLabel: '<= 0%',
+                                        trend: [
+                                            { bulan: 'July 2026', value: 14.5 },
+                                            { bulan: 'August 2026', value: 13.2 },
+                                            { bulan: 'September 2026', value: 12.1 },
+                                            { bulan: 'October 2026', value: 11.7 }
+                                        ]
                                     },
                                     qaScore: {
                                         label: 'QA Score',
@@ -7785,6 +8045,23 @@
                                             { bulan: 'September 2026', value: 99.6 },
                                             { bulan: 'October 2026', value: 99.9 }
                                         ]
+                                    },
+                                    ratioBa: {
+                                        label: 'Ratio BA',
+                                        icon: 'ratioba',
+                                        unit: 'percent',
+                                        average: 3.2,
+                                        achieveCount: 37,
+                                        totalAgents: 41,
+                                        achievePercent: 90.2,
+                                        achieveText: '37/41',
+                                        targetLabel: '<= 5%',
+                                        trend: [
+                                            { bulan: 'July 2026', value: 4.8 },
+                                            { bulan: 'August 2026', value: 4.1 },
+                                            { bulan: 'September 2026', value: 3.6 },
+                                            { bulan: 'October 2026', value: 3.2 }
+                                        ]
                                     }
                                 }
                             });
@@ -7800,9 +8077,11 @@
                                 aht: { label: 'AHT', unit: 'time', valBase: 225 },
                                 qaScore: { label: 'QA Score', unit: 'number', valBase: 96.4 },
                                 staffTime: { label: 'Staff Time', unit: 'hms', valBase: 27900 },
+                                effectiveTime: { label: 'Effective Time', unit: 'hms', valBase: 25200 },
                                 nps: { label: 'NPS', unit: 'percent', valBase: 84.8 },
-                                badtiket: { label: 'Badtiket', unit: 'percent', valBase: 100 },
-                                kehadiran: { label: 'Kehadiran', unit: 'percent', valBase: 97.4 }
+                                badtiket: { label: 'Badtiket', unit: 'percent', valBase: 0 },
+                                kehadiran: { label: 'Kehadiran', unit: 'percent', valBase: 97.4 },
+                                ratioBa: { label: 'Ratio BA', unit: 'percent', valBase: 3.2 }
                             };
                             const info = cfgMap[key] || { label: 'Detail', unit: 'number', valBase: 25 };
                             const selectedBulan = (filters && filters.bulan && filters.bulan !== 'All') ? filters.bulan : 'September';
@@ -8264,7 +8543,7 @@
                     try {
                         const parsed = new URL(url);
                         bannerSrc.textContent = parsed.hostname;
-                    } catch(e) {
+                    } catch (e) {
                         bannerSrc.textContent = 'Custom URL';
                     }
                 }
@@ -8276,7 +8555,7 @@
                 if (bannerSrc) { bannerSrc.textContent = 'Local Mock'; }
             }
         }
-        try { updateGasUiStatus(); } catch(e) {}
+        try { updateGasUiStatus(); } catch (e) { }
 
         const ICONS = {
             productivity: '<path d="M3 3v18h18" stroke-linecap="round" stroke-linejoin="round"/><path d="M7 15l4-4 3 3 5-6" stroke-linecap="round" stroke-linejoin="round"/>',
@@ -8286,6 +8565,8 @@
             aht: '<circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3" stroke-linecap="round" stroke-linejoin="round"/>',
             qa: '<path d="M9 12l2 2 4-4" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="12" r="9"/>',
             stafftime: '<path d="M9 2h6" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 2v3" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="13" r="8"/><path d="M12 9v4l3 2" stroke-linecap="round" stroke-linejoin="round"/>',
+            effectivetime: '<circle cx="12" cy="14" r="7"/><path d="M12 11v3l2 2" stroke-linecap="round" stroke-linejoin="round"/><path d="M10 3h4" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 3v4" stroke-linecap="round" stroke-linejoin="round"/><path d="M19 7l-1.5 1.5" stroke-linecap="round" stroke-linejoin="round"/>',
+            ratioba: '<path d="M18 20V10" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 20V4" stroke-linecap="round" stroke-linejoin="round"/><path d="M6 20v-6" stroke-linecap="round" stroke-linejoin="round"/><path d="M3 20h18" stroke-linecap="round" stroke-linejoin="round"/>',
             nps: '<circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/>',
             badtiket: '<path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z" stroke-linecap="round" stroke-linejoin="round"/><polyline points="14 2 14 8 20 8"/><line x1="9.5" y1="12.5" x2="14.5" y2="17.5" stroke-linecap="round" stroke-linejoin="round"/><line x1="14.5" y1="12.5" x2="9.5" y2="17.5" stroke-linecap="round" stroke-linejoin="round"/>',
             kehadiran: '<rect x="3" y="4" width="18" height="18" rx="2" ry="2" stroke-linecap="round" stroke-linejoin="round"/><line x1="16" y1="2" x2="16" y2="6" stroke-linecap="round" stroke-linejoin="round"/><line x1="8" y1="2" x2="8" y2="6" stroke-linecap="round" stroke-linejoin="round"/><line x1="3" y1="10" x2="21" y2="10" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 16l2 2 4-4" stroke-linecap="round" stroke-linejoin="round"/>'
@@ -8354,7 +8635,7 @@
         let currentSession = null;
         const SESSION_STORAGE_KEY = 'dailyMaticChoFixed_session';
 
-        const CARD_ORDER = ['staffTime', 'produktivity', 'closedRate', 'callbackRate', 'aht', 'badtiket', 'qaScore', 'kehadiran'];
+        const CARD_ORDER = ['staffTime', 'effectiveTime', 'produktivity', 'closedRate', 'callbackRate', 'aht', 'badtiket', 'qaScore', 'kehadiran', 'ratioBa'];
         const MONTH_NAMES_FULL = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 
         // Filter ATAS - mengontrol card overview
@@ -8379,17 +8660,17 @@
 
         function labelOf(key) {
             const map = {
-                staffTime: 'Staff Time', produktivity: 'AVG Produktivity', closedRate: 'Closed Rate',
+                staffTime: 'Staff Time', effectiveTime: 'Effective Time', produktivity: 'AVG Produktivity', closedRate: 'Closed Rate',
                 callbackRate: 'Callback Rate', aht: 'AHT', badtiket: 'Badtiket',
-                qaScore: 'QA Score', kehadiran: 'Kehadiran'
+                qaScore: 'QA Score', kehadiran: 'Kehadiran', ratioBa: 'Ratio BA'
             };
             return map[key] || key;
         }
         function iconOf(key) {
             const map = {
-                staffTime: 'stafftime', produktivity: 'productivity', closedRate: 'closed',
+                staffTime: 'stafftime', effectiveTime: 'effectivetime', produktivity: 'productivity', closedRate: 'closed',
                 callbackRate: 'callback', aht: 'aht', badtiket: 'badtiket',
-                qaScore: 'qa', kehadiran: 'kehadiran'
+                qaScore: 'qa', kehadiran: 'kehadiran', ratioBa: 'ratioba'
             };
             return map[key] || 'productivity';
         }
@@ -8575,6 +8856,12 @@
                 let numVal = item.average;
                 if (numVal === undefined && item.value !== undefined) numVal = item.value;
                 if (numVal === undefined && item.val !== undefined) numVal = item.val;
+
+                // Khusus Badtiket: jika nilai raw masih dalam format persentase kebalikan (> 50, misal 88.3),
+                // kurangkan dengan 100% sehingga menjadi angka Badtiket yang sebenarnya (misal 100 - 88.3 = 11.7%)
+                if (key === 'badtiket' && numVal !== undefined && numVal !== null && !isNaN(numVal) && numVal > 50) {
+                    numVal = +(100 - numVal).toFixed(2);
+                }
 
                 if (numVal !== undefined && numVal !== null && !isNaN(numVal)) {
                     fmt = formatValue(unit, numVal);
@@ -8763,7 +9050,10 @@
             // Mini average live sesuai filter tabel ini (nilai 0 tidak dihitung, konsisten dgn card)
             const nonZero = rows.map(r => r.value).filter(v => v !== 0 && !isNaN(v));
             if (nonZero.length > 0) {
-                const avg = nonZero.reduce((a, b) => a + b, 0) / nonZero.length;
+                let avg = nonZero.reduce((a, b) => a + b, 0) / nonZero.length;
+                if (key === 'badtiket' && avg > 50) {
+                    avg = +(100 - avg).toFixed(2);
+                }
                 badge.textContent = 'Rata-rata (filter ini): ' + formatRowValue(detail.unit, avg);
                 badge.style.display = 'inline-flex';
             } else {
@@ -9024,7 +9314,7 @@
             // 2. Kalkulasi Rata-rata per Agen
             const agentMap = {};
             const dateSummary = {};
-            const isPercentMetric = (unit === 'percent' || unit === 'nps' || key === 'badtiket' || key === 'kehadiran' || key === 'nps' || key === 'closedRate' || key === 'callbackRate' || key === 'hvcRate');
+            const isPercentMetric = (unit === 'percent' || unit === 'nps' || key === 'badtiket' || key === 'kehadiran' || key === 'closedRate' || key === 'callbackRate' || key === 'hvcRate' || key === 'ratioBa');
 
             rows.forEach(function (r) {
                 const ag = String(r.agent || '').trim();
@@ -9037,6 +9327,9 @@
                     // Normalisasi pecahan 0..1 (seperti 0.75, 1) menjadi persentase 0..100
                     if (isPercentMetric && val <= 1 && val >= -1 && val !== 0) {
                         val = val * 100;
+                    }
+                    if (key === 'badtiket' && val > 50) {
+                        val = +(100 - val).toFixed(2);
                     }
                     agentMap[ag].sum += val;
                     agentMap[ag].count++;
@@ -9073,6 +9366,9 @@
                 let v = r.value;
                 if (v !== null && v !== undefined && !isNaN(v) && isPercentMetric && v <= 1 && v >= -1 && v !== 0) {
                     v = v * 100;
+                }
+                if (key === 'badtiket' && v !== null && v !== undefined && !isNaN(v) && v > 50) {
+                    v = +(100 - v).toFixed(2);
                 }
                 return v;
             }).filter(v => v !== null && v !== undefined && !isNaN(v) && (!isExcludeZero || v !== 0));
@@ -9372,11 +9668,31 @@
                     return {
                         rootCause: 'Keterlambatan login, jeda istirahat yang melebihi batas jadwal, atau status idle/aux yang tidak sesuai peruntukan.',
                         action1Headline: 'Briefing Kedisiplinan Jadwal Kerja',
-                        action1Desc: 'Ingatkan komitmen jam kerja efektif minimal 7 jam 45 menit (27.900 detik) sesuai ketentuan operasional.',
+                        action1Desc: 'Ingatkan komitmen jam kerja minimal 7 jam 45 menit (27.900 detik) sesuai ketentuan operasional.',
                         action2Headline: 'Pemantauan Aux & Status Login',
                         action2Desc: 'Team Leader memantau status kehadiran di awal shift dan memverifikasi ketepatan waktu kembali dari istirahat.',
                         action3Headline: 'Rekapitulasi Kepatuhan Mingguan',
                         action3Desc: 'Berikan apresiasi kepada agen dengan kepatuhan 100% dan terbitkan teguran pembinaan bagi keterlambatan berulang.'
+                    };
+                case 'effectiveTime':
+                    return {
+                        rootCause: 'Waktu produktif/efektif melayani pelanggan masih di bawah target minimal 7 jam (25.200 detik) akibat durasi idle atau status non-produktif.',
+                        action1Headline: 'Optimalisasi Waktu Kerja Efektif',
+                        action1Desc: 'Pastikan agen meminimalkan status idle/aux di luar jam istirahat resmi agar jam pelayanan mencapai minimal 7 jam per hari.',
+                        action2Headline: 'Monitoring Kesiapan Sistem & Tools',
+                        action2Desc: 'Identifikasi potensi kendala teknis atau aplikasi yang menghambat agen berstatus aktif melayani pelanggan.',
+                        action3Headline: 'Review Pacing Harian oleh Team Leader',
+                        action3Desc: 'Lakukan evaluasi pencapaian Effective Time setiap akhir shift bersama agen yang belum mencapai standar.'
+                    };
+                case 'ratioBa':
+                    return {
+                        rootCause: 'Tingkat rasio Berita Acara (BA) melebihi batas maksimal 5% akibat kendala teknis berulang atau eskalasi masalah yang belum tertangani tuntas.',
+                        action1Headline: 'Audit Penyebab Pembuatan BA',
+                        action1Desc: 'Identifikasi pola dan kategori kasus terbanyak yang memicu pembuatan Berita Acara untuk dicarikan solusi permanen.',
+                        action2Headline: 'Refreshment Prosedur & Syarat BA',
+                        action2Desc: 'Pastikan agen memahami SOP pembuatan BA yang tepat dan hanya menerbitkan BA untuk kasus yang benar-benar memenuhi kriteria.',
+                        action3Headline: 'Koordinasi Lintas Unit Penanganan',
+                        action3Desc: 'Tingkatkan kecepatan resolusi penanganan kasus BA bersama tim terkait agar rasio tetap terkendali di bawah 5%.'
                     };
                 case 'nps':
                     return {
@@ -9425,9 +9741,11 @@
             if (!targetInfo) return '-';
             const opSymbol = targetInfo.op === 'gte' ? '≥ ' : '≤ ';
             if (key === 'staffTime') return opSymbol + '07h 45m (27.900s)';
+            if (key === 'effectiveTime') return opSymbol + '07h 00m (25.200s)';
             if (key === 'aht') return opSymbol + '600 detik (10m)';
-            if (key === 'badtiket') return '100%';
+            if (key === 'badtiket') return '0%';
             if (key === 'kehadiran') return '100%';
+            if (key === 'ratioBa') return opSymbol + '5%';
             if (key === 'qaScore' || key === 'produktivity') return opSymbol + targetInfo.value;
             return opSymbol + targetInfo.value + '%';
         }
@@ -9966,14 +10284,16 @@
         let currentBPMode = 'agent'; // 'agent' atau 'tl'
 
         const TL_METRIC_TARGETS = {
-            staffTime:    { op: 'gte', value: 27900, label: 'Staff >= 07h 45m' },
+            staffTime: { op: 'gte', value: 27900, label: 'Staff >= 07h 45m' },
+            effectiveTime: { op: 'gte', value: 25200, label: 'Effective >= 07h 00m' },
             produktivity: { op: 'gte', value: 75, label: 'Prod >= 75' },
-            closedRate:   { op: 'gte', value: 40, label: 'Closed >= 40%' },
+            closedRate: { op: 'gte', value: 40, label: 'Closed >= 40%' },
             callbackRate: { op: 'gte', value: 15, label: 'CB >= 15%' },
-            aht:          { op: 'lte', value: 600, label: 'AHT <= 10m' },
-            badtiket:     { op: 'gte', value: 100, label: 'Badtiket 100%' },
-            qaScore:      { op: 'gte', value: 95, label: 'QA >= 95' },
-            kehadiran:    { op: 'gte', value: 100, label: 'Kehadiran 100%' }
+            aht: { op: 'lte', value: 600, label: 'AHT <= 10m' },
+            badtiket: { op: 'gte', value: 100, label: 'Badtiket 0%' },
+            qaScore: { op: 'gte', value: 95, label: 'QA >= 95' },
+            kehadiran: { op: 'gte', value: 100, label: 'Kehadiran 100%' },
+            ratioBa: { op: 'lte', value: 5, label: 'Ratio BA <= 5%' }
         };
 
         function calculateBPScore_(key, val, rankIdx) {
@@ -9988,6 +10308,17 @@
                 if (sec >= 25200) return 50;  // >= 07:00:00 -> Skor 5
                 return 10;                    // < 07:00:00  -> Skor 1
             }
+            if (key === 'effectiveTime') {
+                const sec = Number(val);
+                if (isNaN(sec)) return 10;
+                if (sec >= 25200) return 100; // >= 07:00:00 -> Skor 10
+                if (sec >= 24300) return 90;  // >= 06:45:00 -> Skor 9
+                if (sec >= 23400) return 80;  // >= 06:30:00 -> Skor 8
+                if (sec >= 22500) return 70;  // >= 06:15:00 -> Skor 7
+                if (sec >= 21600) return 60;  // >= 06:00:00 -> Skor 6
+                if (sec >= 20700) return 50;  // >= 05:45:00 -> Skor 5
+                return 10;                    // < 05:45:00  -> Skor 1
+            }
             return Math.max(10, 100 - (rankIdx * 5));
         }
 
@@ -9997,27 +10328,33 @@
             if ((metricKey === 'badtiket' || metricKey === 'hvcRate' || metricKey === 'kehadiran') && num <= 1 && num > 0) {
                 num = num * 100;
             }
+            if (metricKey === 'badtiket') {
+                // Mendukung baik format raw (100 = 0% bad tiket) maupun format terbalik (0% = lolos target)
+                return num >= 100 || num <= 0;
+            }
             const t = TL_METRIC_TARGETS[metricKey];
             if (!t) return false;
             return t.op === 'gte' ? (num >= t.value) : (num <= t.value);
         }
 
-        const PRECALCULATED_TL_OVERALL = {"All":[{"agent":"Farobi","tl":"82.5% Overall Populasi","value":82.5,"unit":"percent","totalAgents":12,"metricValues":{"staffTime":85,"produktivity":88,"closedRate":80,"callbackRate":82,"aht":90,"badtiket":85,"qaScore":75,"kehadiran":75},"details":{"staffTime":{"pass":10,"total":12,"pct":85},"produktivity":{"pass":11,"total":12,"pct":88},"closedRate":{"pass":10,"total":12,"pct":80},"callbackRate":{"pass":10,"total":12,"pct":82},"aht":{"pass":11,"total":12,"pct":90},"badtiket":{"pass":10,"total":12,"pct":85},"qaScore":{"pass":9,"total":12,"pct":75},"kehadiran":{"pass":9,"total":12,"pct":75}},"rank":1},{"agent":"Ibnu Aji Nur Hakim","tl":"78.2% Overall Populasi","value":78.2,"unit":"percent","totalAgents":14,"metricValues":{"staffTime":80,"produktivity":82,"closedRate":78,"callbackRate":75,"aht":85,"badtiket":80,"qaScore":72,"kehadiran":74},"details":{"staffTime":{"pass":11,"total":14,"pct":80},"produktivity":{"pass":12,"total":14,"pct":82},"closedRate":{"pass":11,"total":14,"pct":78},"callbackRate":{"pass":10,"total":14,"pct":75},"aht":{"pass":12,"total":14,"pct":85},"badtiket":{"pass":11,"total":14,"pct":80},"qaScore":{"pass":10,"total":14,"pct":72},"kehadiran":{"pass":10,"total":14,"pct":74}},"rank":2},{"agent":"ISA RANA MACHILIKHAN PUTRA","tl":"74.6% Overall Populasi","value":74.6,"unit":"percent","totalAgents":15,"metricValues":{"staffTime":76,"produktivity":78,"closedRate":74,"callbackRate":72,"aht":80,"badtiket":75,"qaScore":70,"kehadiran":72},"details":{"staffTime":{"pass":11,"total":15,"pct":76},"produktivity":{"pass":12,"total":15,"pct":78},"closedRate":{"pass":11,"total":15,"pct":74},"callbackRate":{"pass":11,"total":15,"pct":72},"aht":{"pass":12,"total":15,"pct":80},"badtiket":{"pass":11,"total":15,"pct":75},"qaScore":{"pass":10,"total":15,"pct":70},"kehadiran":{"pass":11,"total":15,"pct":72}},"rank":3}],"October":[{"agent":"Farobi","tl":"82.5% Overall Populasi","value":82.5,"unit":"percent","totalAgents":12,"metricValues":{"staffTime":85,"produktivity":88,"closedRate":80,"callbackRate":82,"aht":90,"badtiket":85,"qaScore":75,"kehadiran":75},"details":{"staffTime":{"pass":10,"total":12,"pct":85},"produktivity":{"pass":11,"total":12,"pct":88},"closedRate":{"pass":10,"total":12,"pct":80},"callbackRate":{"pass":10,"total":12,"pct":82},"aht":{"pass":11,"total":12,"pct":90},"badtiket":{"pass":10,"total":12,"pct":85},"qaScore":{"pass":9,"total":12,"pct":75},"kehadiran":{"pass":9,"total":12,"pct":75}},"rank":1},{"agent":"Ibnu Aji Nur Hakim","tl":"78.2% Overall Populasi","value":78.2,"unit":"percent","totalAgents":14,"metricValues":{"staffTime":80,"produktivity":82,"closedRate":78,"callbackRate":75,"aht":85,"badtiket":80,"qaScore":72,"kehadiran":74},"details":{"staffTime":{"pass":11,"total":14,"pct":80},"produktivity":{"pass":12,"total":14,"pct":82},"closedRate":{"pass":11,"total":14,"pct":78},"callbackRate":{"pass":10,"total":14,"pct":75},"aht":{"pass":12,"total":14,"pct":85},"badtiket":{"pass":11,"total":14,"pct":80},"qaScore":{"pass":10,"total":14,"pct":72},"kehadiran":{"pass":10,"total":14,"pct":74}},"rank":2},{"agent":"ISA RANA MACHILIKHAN PUTRA","tl":"74.6% Overall Populasi","value":74.6,"unit":"percent","totalAgents":15,"metricValues":{"staffTime":76,"produktivity":78,"closedRate":74,"callbackRate":72,"aht":80,"badtiket":75,"qaScore":70,"kehadiran":72},"details":{"staffTime":{"pass":11,"total":15,"pct":76},"produktivity":{"pass":12,"total":15,"pct":78},"closedRate":{"pass":11,"total":15,"pct":74},"callbackRate":{"pass":11,"total":15,"pct":72},"aht":{"pass":12,"total":15,"pct":80},"badtiket":{"pass":11,"total":15,"pct":75},"qaScore":{"pass":10,"total":15,"pct":70},"kehadiran":{"pass":11,"total":15,"pct":72}},"rank":3}]};
+        const PRECALCULATED_TL_OVERALL = { "All": [{ "agent": "Farobi", "tl": "82.5% Overall Populasi", "value": 82.5, "unit": "percent", "totalAgents": 12, "metricValues": { "staffTime": 85, "produktivity": 88, "closedRate": 80, "callbackRate": 82, "aht": 90, "badtiket": 85, "qaScore": 75, "kehadiran": 75 }, "details": { "staffTime": { "pass": 10, "total": 12, "pct": 85 }, "produktivity": { "pass": 11, "total": 12, "pct": 88 }, "closedRate": { "pass": 10, "total": 12, "pct": 80 }, "callbackRate": { "pass": 10, "total": 12, "pct": 82 }, "aht": { "pass": 11, "total": 12, "pct": 90 }, "badtiket": { "pass": 10, "total": 12, "pct": 85 }, "qaScore": { "pass": 9, "total": 12, "pct": 75 }, "kehadiran": { "pass": 9, "total": 12, "pct": 75 } }, "rank": 1 }, { "agent": "Ibnu Aji Nur Hakim", "tl": "78.2% Overall Populasi", "value": 78.2, "unit": "percent", "totalAgents": 14, "metricValues": { "staffTime": 80, "produktivity": 82, "closedRate": 78, "callbackRate": 75, "aht": 85, "badtiket": 80, "qaScore": 72, "kehadiran": 74 }, "details": { "staffTime": { "pass": 11, "total": 14, "pct": 80 }, "produktivity": { "pass": 12, "total": 14, "pct": 82 }, "closedRate": { "pass": 11, "total": 14, "pct": 78 }, "callbackRate": { "pass": 10, "total": 14, "pct": 75 }, "aht": { "pass": 12, "total": 14, "pct": 85 }, "badtiket": { "pass": 11, "total": 14, "pct": 80 }, "qaScore": { "pass": 10, "total": 14, "pct": 72 }, "kehadiran": { "pass": 10, "total": 14, "pct": 74 } }, "rank": 2 }, { "agent": "ISA RANA MACHILIKHAN PUTRA", "tl": "74.6% Overall Populasi", "value": 74.6, "unit": "percent", "totalAgents": 15, "metricValues": { "staffTime": 76, "produktivity": 78, "closedRate": 74, "callbackRate": 72, "aht": 80, "badtiket": 75, "qaScore": 70, "kehadiran": 72 }, "details": { "staffTime": { "pass": 11, "total": 15, "pct": 76 }, "produktivity": { "pass": 12, "total": 15, "pct": 78 }, "closedRate": { "pass": 11, "total": 15, "pct": 74 }, "callbackRate": { "pass": 11, "total": 15, "pct": 72 }, "aht": { "pass": 12, "total": 15, "pct": 80 }, "badtiket": { "pass": 11, "total": 15, "pct": 75 }, "qaScore": { "pass": 10, "total": 15, "pct": 70 }, "kehadiran": { "pass": 11, "total": 15, "pct": 72 } }, "rank": 3 }], "October": [{ "agent": "Farobi", "tl": "82.5% Overall Populasi", "value": 82.5, "unit": "percent", "totalAgents": 12, "metricValues": { "staffTime": 85, "produktivity": 88, "closedRate": 80, "callbackRate": 82, "aht": 90, "badtiket": 85, "qaScore": 75, "kehadiran": 75 }, "details": { "staffTime": { "pass": 10, "total": 12, "pct": 85 }, "produktivity": { "pass": 11, "total": 12, "pct": 88 }, "closedRate": { "pass": 10, "total": 12, "pct": 80 }, "callbackRate": { "pass": 10, "total": 12, "pct": 82 }, "aht": { "pass": 11, "total": 12, "pct": 90 }, "badtiket": { "pass": 10, "total": 12, "pct": 85 }, "qaScore": { "pass": 9, "total": 12, "pct": 75 }, "kehadiran": { "pass": 9, "total": 12, "pct": 75 } }, "rank": 1 }, { "agent": "Ibnu Aji Nur Hakim", "tl": "78.2% Overall Populasi", "value": 78.2, "unit": "percent", "totalAgents": 14, "metricValues": { "staffTime": 80, "produktivity": 82, "closedRate": 78, "callbackRate": 75, "aht": 85, "badtiket": 80, "qaScore": 72, "kehadiran": 74 }, "details": { "staffTime": { "pass": 11, "total": 14, "pct": 80 }, "produktivity": { "pass": 12, "total": 14, "pct": 82 }, "closedRate": { "pass": 11, "total": 14, "pct": 78 }, "callbackRate": { "pass": 10, "total": 14, "pct": 75 }, "aht": { "pass": 12, "total": 14, "pct": 85 }, "badtiket": { "pass": 11, "total": 14, "pct": 80 }, "qaScore": { "pass": 10, "total": 14, "pct": 72 }, "kehadiran": { "pass": 10, "total": 14, "pct": 74 } }, "rank": 2 }, { "agent": "ISA RANA MACHILIKHAN PUTRA", "tl": "74.6% Overall Populasi", "value": 74.6, "unit": "percent", "totalAgents": 15, "metricValues": { "staffTime": 76, "produktivity": 78, "closedRate": 74, "callbackRate": 72, "aht": 80, "badtiket": 75, "qaScore": 70, "kehadiran": 72 }, "details": { "staffTime": { "pass": 11, "total": 15, "pct": 76 }, "produktivity": { "pass": 12, "total": 15, "pct": 78 }, "closedRate": { "pass": 11, "total": 15, "pct": 74 }, "callbackRate": { "pass": 11, "total": 15, "pct": 72 }, "aht": { "pass": 12, "total": 15, "pct": 80 }, "badtiket": { "pass": 11, "total": 15, "pct": 75 }, "qaScore": { "pass": 10, "total": 15, "pct": 70 }, "kehadiran": { "pass": 11, "total": 15, "pct": 72 } }, "rank": 3 }] };
 
         function buildTLPopulationBundleFromOverall(overallList) {
             if (!overallList || overallList.length === 0) return { overall: [], metrics: {} };
-            const metricKeys = ['staffTime', 'produktivity', 'closedRate', 'callbackRate', 'aht', 'badtiket', 'qaScore', 'kehadiran'];
+            const metricKeys = ['staffTime', 'effectiveTime', 'produktivity', 'closedRate', 'callbackRate', 'aht', 'badtiket', 'qaScore', 'kehadiran', 'ratioBa'];
             const metricLabels = {
+                staffTime: 'Staff Time',
+                effectiveTime: 'Effective Time',
                 produktivity: 'AVG Produktivity',
                 closedRate: 'Closed Rate',
                 callbackRate: 'Callback Rate',
                 hvcRate: 'HVC Rate',
                 aht: 'AHT',
-                qaScore: 'QA Score',
-                staffTime: 'Staff Time',
-                nps: 'NPS',
                 badtiket: 'Badtiket',
-                kehadiran: 'Kehadiran'
+                qaScore: 'QA Score',
+                kehadiran: 'Kehadiran',
+                ratioBa: 'Ratio BA',
+                nps: 'NPS'
             };
             const metrics = {};
             metricKeys.forEach(k => {
@@ -10074,7 +10411,7 @@
             if (!agentList || agentList.length === 0) return { overall: [], metrics: {} };
 
             const tlMap = {};
-            const metricKeys = ['staffTime', 'produktivity', 'closedRate', 'callbackRate', 'aht', 'badtiket', 'qaScore', 'kehadiran'];
+            const metricKeys = ['staffTime', 'effectiveTime', 'produktivity', 'closedRate', 'callbackRate', 'aht', 'badtiket', 'qaScore', 'kehadiran', 'ratioBa'];
 
             agentList.forEach(item => {
                 const tlName = (item.tl || '').trim();
@@ -10084,8 +10421,8 @@
                     tlMap[tlName] = {
                         tl: tlName,
                         agents: new Set(),
-                        totals: { staffTime: 0, produktivity: 0, closedRate: 0, callbackRate: 0, aht: 0, badtiket: 0, qaScore: 0, kehadiran: 0 },
-                        pass: { staffTime: 0, produktivity: 0, closedRate: 0, callbackRate: 0, aht: 0, badtiket: 0, qaScore: 0, kehadiran: 0 }
+                        totals: { staffTime: 0, effectiveTime: 0, produktivity: 0, closedRate: 0, callbackRate: 0, aht: 0, badtiket: 0, qaScore: 0, kehadiran: 0, ratioBa: 0 },
+                        pass: { staffTime: 0, effectiveTime: 0, produktivity: 0, closedRate: 0, callbackRate: 0, aht: 0, badtiket: 0, qaScore: 0, kehadiran: 0, ratioBa: 0 }
                     };
                 }
 
@@ -10136,16 +10473,18 @@
             // Peringkat per metrik individual untuk TL
             const metricsRanking = {};
             const metricLabels = {
+                staffTime: 'Staff Time',
+                effectiveTime: 'Effective Time',
                 produktivity: 'AVG Produktivity',
                 closedRate: 'Closed Rate',
                 callbackRate: 'Callback Rate',
                 hvcRate: 'HVC Rate',
                 aht: 'AHT',
-                qaScore: 'QA Score',
-                staffTime: 'Staff Time',
-                nps: 'NPS',
                 badtiket: 'Badtiket',
-                kehadiran: 'Kehadiran'
+                qaScore: 'QA Score',
+                kehadiran: 'Kehadiran',
+                ratioBa: 'Ratio BA',
+                nps: 'NPS'
             };
 
             metricKeys.forEach(k => {
@@ -10212,13 +10551,13 @@
             if (currentBPMode === 'tl') {
                 if (badgePill) badgePill.innerHTML = '<span>👑</span><span>Hall of Fame &bull; Team Leader Leaderboard</span>';
                 if (mainTitle) mainTitle.innerHTML = 'Best Perform <span class="brand-accent">TL CHO Fixed</span>';
-                if (mainSubtitle) mainSubtitle.textContent = 'Peringkat performa Team Leader berdasarkan persentase Populasi SIAD/Agen yang memenuhi target 8 metrik operasional.';
+                if (mainSubtitle) mainSubtitle.textContent = 'Peringkat performa Team Leader berdasarkan persentase Populasi SIAD/Agen yang memenuhi target 10 metrik operasional.';
                 if (lbSubtitle) lbSubtitle.textContent = 'Urutan performa Team Leader rank 4 ke atas';
                 if (searchInput) searchInput.placeholder = 'Cari nama Team Leader...';
             } else {
                 if (badgePill) badgePill.innerHTML = '<span>⭐</span><span>Hall of Fame &bull; Performance Leaderboard</span>';
                 if (mainTitle) mainTitle.innerHTML = 'Best Perform <span class="brand-accent">CHO Fixed</span>';
-                if (mainSubtitle) mainSubtitle.textContent = 'Apresiasi dan peringkat pencapaian tertinggi agen berdasarkan 8 metrik analitik operasional.';
+                if (mainSubtitle) mainSubtitle.textContent = 'Apresiasi dan peringkat pencapaian tertinggi agen berdasarkan 10 metrik analitik operasional.';
                 if (lbSubtitle) lbSubtitle.textContent = 'Urutan performa agen rank 4 ke atas';
                 if (searchInput) searchInput.placeholder = 'Cari nama agen...';
             }
@@ -10250,14 +10589,14 @@
 
                     <div class="bp-formula-grid">
                         <div class="bp-formula-box">
-                            <div class="bp-box-badge badge-blue">🎯 Standar Target 8 Metrik</div>
+                            <div class="bp-box-badge badge-blue">🎯 Standar Target 10 Metrik</div>
                             <h5>Threshold Kelulusan Agen</h5>
                             <p>Setiap agen di tim TL dievaluasi terhadap standar target operasional:</p>
                             <ul class="bp-formula-list" style="font-size: 11px;">
-                                <li><span class="bullet positive">✓</span> <strong>Staff Time:</strong> &ge; 07h 45m &bull; <strong>Prod:</strong> &ge; 75</li>
-                                <li><span class="bullet positive">✓</span> <strong>Closed:</strong> &ge; 40% &bull; <strong>Callback:</strong> &ge; 15%</li>
-                                <li><span class="bullet efficiency">✓</span> <strong>AHT:</strong> &le; 10 Menit (600s) &bull; <strong>QA Score:</strong> &ge; 95</li>
-                                <li><span class="bullet positive">✓</span> <strong>Badtiket:</strong> 100% &bull; <strong>Kehadiran:</strong> 100%</li>
+                                <li><span class="bullet positive">✓</span> <strong>Staff Time:</strong> &ge; 07h 45m &bull; <strong>Effective Time:</strong> &ge; 07h 00m</li>
+                                <li><span class="bullet positive">✓</span> <strong>Prod:</strong> &ge; 75 &bull; <strong>Closed:</strong> &ge; 40% &bull; <strong>Callback:</strong> &ge; 15%</li>
+                                <li><span class="bullet efficiency">✓</span> <strong>AHT:</strong> &le; 10 Menit (600s) &bull; <strong>Ratio BA:</strong> &le; 5%</li>
+                                <li><span class="bullet positive">✓</span> <strong>Badtiket:</strong> 0% &bull; <strong>QA Score:</strong> &ge; 95 &bull; <strong>Kehadiran:</strong> 100%</li>
                             </ul>
                         </div>
 
@@ -10268,15 +10607,15 @@
                             <div class="bp-formula-formula-tag">
                                 <code>Populasi = (Agen Lolos Target / Total Agen) × 100%</code>
                             </div>
-                            <p style="font-size: 11px; margin-top: 6px; color: var(--text-dim);">Dihitung secara independen untuk tiap-tiap metrik dari 8 metrik operasional.</p>
+                            <p style="font-size: 11px; margin-top: 6px; color: var(--text-dim);">Dihitung secara independen untuk tiap-tiap metrik dari 10 metrik operasional.</p>
                         </div>
 
                         <div class="bp-formula-box">
                             <div class="bp-box-badge badge-gold">👑 Penentuan Juara 1 TL</div>
-                            <h5>Overall Populasi TL (Rata-rata 8 Metrik)</h5>
-                            <p>Skor akumulasi Team Leader adalah rata-rata persentase populasi 8 metrik:</p>
+                            <h5>Overall Populasi TL (Rata-rata 10 Metrik)</h5>
+                            <p>Skor akumulasi Team Leader adalah rata-rata persentase populasi 10 metrik:</p>
                             <div class="bp-formula-formula-tag formula-highlight">
-                                <code>Overall Populasi = (∑ % Populasi 8 Metrik) / 8</code>
+                                <code>Overall Populasi = (∑ % Populasi 10 Metrik) / 10</code>
                             </div>
                             <p style="font-size: 11.5px; margin-top: 6px; color: var(--text-dim);">TL dengan Overall Populasi tertinggi dinobatkan sebagai <strong>Champion TL</strong> di Podium Emas.</p>
                         </div>
@@ -10307,12 +10646,12 @@
                     <div class="bp-formula-grid">
                         <div class="bp-formula-box">
                             <div class="bp-box-badge badge-blue">🎯 Pilar Penilaian</div>
-                            <h5>8 Metrik Operasional</h5>
-                            <p>Setiap agen dievaluasi di 8 metrik operasional terstandarisasi:</p>
+                            <h5>10 Metrik Operasional</h5>
+                            <p>Setiap agen dievaluasi di 10 metrik operasional terstandarisasi:</p>
                             <ul class="bp-formula-list">
                                 <li><span class="bullet positive">▲</span> <strong>6 Metrik Prestasi Ranking:</strong> Produktivitas, Closed Rate, Callback Rate, QA Score, Badtiket (%), &amp; Kehadiran (%).</li>
-                                <li><span class="bullet efficiency">▼</span> <strong>1 Metrik Efisiensi Durasi:</strong> AHT / Average Handling Time <em>(makin cepat makin tinggi poin)</em>.</li>
-                                <li><span class="bullet positive">🎯</span> <strong>1 Metrik Berbasis Skoring Target:</strong> Staff Time (Target 07:45:00).</li>
+                                <li><span class="bullet efficiency">▼</span> <strong>2 Metrik Efisiensi Durasi &amp; Rasio:</strong> AHT (Average Handling Time) &amp; Ratio BA (%) <em>(makin rendah makin tinggi poin)</em>.</li>
+                                <li><span class="bullet positive">🎯</span> <strong>2 Metrik Berbasis Skoring Target:</strong> Staff Time (Target 07:45:00) &amp; Effective Time (Target 07:00:00).</li>
                             </ul>
                         </div>
 
@@ -10320,17 +10659,17 @@
                             <div class="bp-box-badge badge-purple">🎖️ Sistem Poin &amp; Skoring</div>
                             <h5>Kriteria Skoring Metrik (Skala 10–100 Pts / Skor 1–10)</h5>
                             <ul class="bp-formula-list" style="margin-top: 6px;">
-                                <li><strong>Metrik Ranking (Prod, Closed, CB, QA, Hadir, AHT, Badtiket):</strong><br><code>Poin = Max(10, 100 - (Rank - 1) × 5)</code><br>Rank 1 = 100 Pts, Rank 2 = 95 Pts, dst.</li>
-                                <li><strong>Staff Time (Target 07:45:00):</strong><br>&ge;07:45:00: 100 Pts (Skor 10), &ge;07:40:00: 90 Pts (Skor 9), &ge;07:30:00: 80 Pts (Skor 8), &ge;07:20:00: 70 Pts (Skor 7), &ge;07:10:00: 60 Pts, &ge;07:00:00: 50 Pts, &lt;07:00:00: 10 Pts (Skor 1).</li>
+                                <li><strong>Metrik Ranking (Prod, Closed, CB, QA, Hadir, AHT, Badtiket, Ratio BA):</strong><br><code>Poin = Max(10, 100 - (Rank - 1) × 5)</code><br>Rank 1 = 100 Pts, Rank 2 = 95 Pts, dst.</li>
+                                <li><strong>Staff Time (&ge;07:45:00) &amp; Effective Time (&ge;07:00:00):</strong><br>Skoring berjenjang berbasis target durasi harian (10–100 Pts).</li>
                             </ul>
                         </div>
 
                         <div class="bp-formula-box">
                             <div class="bp-box-badge badge-gold">👑 Penentuan Juara 1</div>
-                            <h5>Overall Score (Rata-rata 8 Metrik)</h5>
-                            <p>Skor akumulasi adalah rata-rata poin dari ke-8 metrik:</p>
+                            <h5>Overall Score (Rata-rata 10 Metrik)</h5>
+                            <p>Skor akumulasi adalah rata-rata poin dari ke-10 metrik:</p>
                             <div class="bp-formula-formula-tag formula-highlight">
-                                <code>Overall Score = (∑ Poin 8 Metrik) / 8</code>
+                                <code>Overall Score = (∑ Poin 10 Metrik) / 10</code>
                             </div>
                             <p style="font-size: 11.5px; margin-top: 6px; color: var(--text-dim);">Agen dengan Overall Score tertinggi dinobatkan sebagai <strong>Rank 1 (Champion)</strong> dan menempati podium emas teratas.</p>
                         </div>
@@ -10412,7 +10751,7 @@
         async function fetchSupabaseBestPerform(tahunParam) {
             if (!SUPABASE_CONFIG.url || !SUPABASE_CONFIG.anonKey) return null;
             const endpoint = SUPABASE_CONFIG.url.replace(/\/+$/, '') + '/rest/v1/rpc/get_best_perform_bundle';
-            
+
             // Timeout 6 detik agar tidak hanging jika CSP browser memblokir fetch
             const controller = new AbortController();
             const timer = setTimeout(() => controller.abort(), 6000);
@@ -10456,7 +10795,7 @@
                       <div class="orbit-sparkle"></div>
                     </div>
                     <div class="modal-loading-title">Menghitung Peringkat Best Perform...</div>
-                    <div class="modal-loading-desc">Mengolah data 8 metrik operasional...</div>
+                    <div class="modal-loading-desc">Mengolah data 10 metrik operasional...</div>
                   </div>
                 `;
                 if (stage) stage.innerHTML = loadingHtml;
@@ -10646,30 +10985,34 @@
         }
 
         function aggregateQuarterSliceFromMonths_(monthKeys) {
-            const metricKeys = ['staffTime', 'produktivity', 'closedRate', 'callbackRate', 'aht', 'badtiket', 'qaScore', 'kehadiran'];
+            const metricKeys = ['staffTime', 'effectiveTime', 'produktivity', 'closedRate', 'callbackRate', 'aht', 'badtiket', 'qaScore', 'kehadiran', 'ratioBa'];
             const metricLabels = {
+                staffTime: 'Staff Time',
+                effectiveTime: 'Effective Time',
                 produktivity: 'AVG Produktivity',
                 closedRate: 'Closed Rate',
                 callbackRate: 'Callback Rate',
                 hvcRate: 'HVC Rate',
                 aht: 'AHT',
-                qaScore: 'QA Score',
-                staffTime: 'Staff Time',
-                nps: 'NPS',
                 badtiket: 'Badtiket',
-                kehadiran: 'Kehadiran'
+                qaScore: 'QA Score',
+                kehadiran: 'Kehadiran',
+                ratioBa: 'Ratio BA',
+                nps: 'NPS'
             };
             const metricUnits = {
+                staffTime: 'hms',
+                effectiveTime: 'hms',
                 produktivity: 'number',
                 closedRate: 'percent',
                 callbackRate: 'percent',
                 hvcRate: 'percent',
                 aht: 'time',
-                qaScore: 'number',
-                staffTime: 'hms',
-                nps: 'percent',
                 badtiket: 'percent',
-                kehadiran: 'percent'
+                qaScore: 'number',
+                kehadiran: 'percent',
+                ratioBa: 'percent',
+                nps: 'percent'
             };
 
             const agentMap = {};
@@ -10736,7 +11079,7 @@
             });
 
             metricKeys.forEach(k => {
-                const isAsc = (k === 'aht');
+                const isAsc = (k === 'aht' || k === 'ratioBa');
                 const sorted = agentsList.slice().sort((a, b) => {
                     const valA = a.metricValues[k] || 0;
                     const valB = b.metricValues[k] || 0;
@@ -10768,10 +11111,10 @@
                 };
             });
 
-            // Overall ranking (Rata-rata 8 metrik)
+            // Overall ranking (Rata-rata 10 metrik)
             const overallRanked = agentsList.map(item => {
                 const ptsInfo = agentPoints[item.agent] || { totalPoints: 0, top1Count: 0 };
-                const overallScore = Math.round((ptsInfo.totalPoints / 8) * 10) / 10;
+                const overallScore = Math.round((ptsInfo.totalPoints / metricKeys.length) * 10) / 10;
                 return {
                     agent: item.agent,
                     tl: item.tl,
@@ -10827,8 +11170,8 @@
             const bulanSel = document.getElementById('bpFilterBulan');
             if (!bulanSel) return;
 
-            const allMonths = (bestPerformData && bestPerformData.filterOptions && bestPerformData.filterOptions.bulan) 
-                ? bestPerformData.filterOptions.bulan 
+            const allMonths = (bestPerformData && bestPerformData.filterOptions && bestPerformData.filterOptions.bulan)
+                ? bestPerformData.filterOptions.bulan
                 : ['July', 'August', 'September'];
 
             let filteredMonths = allMonths;
@@ -10861,8 +11204,8 @@
             const chipsWrap = document.getElementById('bpMonthChips');
             if (!chipsWrap) return;
 
-            const allMonths = (bestPerformData && bestPerformData.filterOptions && bestPerformData.filterOptions.bulan) 
-                ? bestPerformData.filterOptions.bulan 
+            const allMonths = (bestPerformData && bestPerformData.filterOptions && bestPerformData.filterOptions.bulan)
+                ? bestPerformData.filterOptions.bulan
                 : ['July', 'August', 'September'];
 
             let filteredMonths = allMonths;
@@ -10994,7 +11337,7 @@
                 const s = sec % 60;
                 return (m < 10 ? '0' : '') + m + ':' + (s < 10 ? '0' : '') + s;
             }
-            if (unit === 'hms') {
+            if (unit === 'hms' || unit === 'duration') {
                 const sec = Math.round(val);
                 const h = Math.floor(sec / 3600);
                 const m = Math.floor((sec % 3600) / 60);
@@ -11010,11 +11353,12 @@
             if (currentBPMode === 'tl') {
                 return (+val).toFixed(1) + '%';
             }
-            if (key === 'closedRate' || key === 'callbackRate' || key === 'hvcRate' || key === 'qaScore' || key === 'nps' || key === 'kehadiran') {
+            if (key === 'closedRate' || key === 'callbackRate' || key === 'hvcRate' || key === 'qaScore' || key === 'nps' || key === 'kehadiran' || key === 'ratioBa') {
                 return (+val).toFixed(1) + '%';
             }
             if (key === 'badtiket') {
-                const norm = (val <= 1 && val > 0) ? (val * 100) : val;
+                let norm = (val <= 1 && val > 0) ? (val * 100) : val;
+                if (norm > 50) norm = 100 - norm;
                 return (+norm).toFixed(1) + '%';
             }
             if (key === 'aht') {
@@ -11023,7 +11367,7 @@
                 const s = sec % 60;
                 return (m < 10 ? '0' : '') + m + ':' + (s < 10 ? '0' : '') + s;
             }
-            if (key === 'staffTime') {
+            if (key === 'staffTime' || key === 'effectiveTime') {
                 const sec = Math.round(val);
                 const h = Math.floor(sec / 3600);
                 const m = Math.floor((sec % 3600) / 60);
@@ -11036,13 +11380,15 @@
             const vals = metricValues || {};
             const cards = [
                 { key: 'staffTime', label: 'Staff', val: vals.staffTime },
+                { key: 'effectiveTime', label: 'Effective', val: vals.effectiveTime },
                 { key: 'produktivity', label: 'Prod', val: vals.produktivity },
                 { key: 'closedRate', label: 'Closed', val: vals.closedRate },
                 { key: 'callbackRate', label: 'CB', val: vals.callbackRate },
                 { key: 'aht', label: 'AHT', val: vals.aht },
                 { key: 'badtiket', label: 'Badtiket', val: vals.badtiket },
                 { key: 'qaScore', label: 'QA', val: vals.qaScore },
-                { key: 'kehadiran', label: 'Hadir', val: vals.kehadiran }
+                { key: 'kehadiran', label: 'Hadir', val: vals.kehadiran },
+                { key: 'ratioBa', label: 'Ratio BA', val: vals.ratioBa }
             ];
 
             const itemsHtml = cards.map(c => {
@@ -11057,7 +11403,7 @@
 
             return `
               <div class="podium-card-achievements">
-                <div class="achieve-title">${currentBPMode === 'tl' ? 'Populasi 8 Card (%)' : 'Pencapaian 8 Card'}</div>
+                <div class="achieve-title">${currentBPMode === 'tl' ? 'Populasi 10 Card (%)' : 'Pencapaian 10 Card'}</div>
                 <div class="achieve-grid">
                   ${itemsHtml}
                 </div>
@@ -11116,14 +11462,14 @@
         function getBPActiveListAndMeta(currentSlice) {
             currentSlice = currentSlice || getCurrentBPSlice() || bestPerformData || {};
             let list = [];
-            let label = 'Overall Performance (8 Metrik)';
+            let label = 'Overall Performance (10 Metrik)';
             let unit = 'score';
 
             if (currentBPMode === 'tl') {
                 const tlData = getTLPopulationData(currentSlice);
                 if (activeBPMetric === 'overall') {
                     list = tlData.overall || [];
-                    label = 'Overall Populasi Tim (8 Metrik)';
+                    label = 'Overall Populasi Tim (10 Metrik)';
                     unit = 'percent';
                 } else if (tlData.metrics && tlData.metrics[activeBPMetric]) {
                     const mInfo = tlData.metrics[activeBPMetric];
@@ -11134,7 +11480,7 @@
             } else {
                 if (activeBPMetric === 'overall') {
                     list = currentSlice.overall || [];
-                    label = 'Overall Performance (8 Metrik)';
+                    label = 'Overall Performance (10 Metrik)';
                     unit = 'score';
                 } else if (currentSlice.metrics && currentSlice.metrics[activeBPMetric]) {
                     const mInfo = currentSlice.metrics[activeBPMetric];
@@ -11143,35 +11489,39 @@
                     unit = mInfo.unit || 'number';
                 } else if (currentSlice.overall && currentSlice.overall.length > 0) {
                     const k = activeBPMetric;
-                    const isAsc = (k === 'aht');
+                    const isAsc = (k === 'aht' || k === 'ratioBa');
                     const sorted = currentSlice.overall.slice().sort((a, b) => {
                         const valA = (a.metricValues && a.metricValues[k] !== undefined && a.metricValues[k] !== null) ? Number(a.metricValues[k]) : (isAsc ? 999999 : -999999);
                         const valB = (b.metricValues && b.metricValues[k] !== undefined && b.metricValues[k] !== null) ? Number(b.metricValues[k]) : (isAsc ? 999999 : -999999);
                         return isAsc ? (valA - valB) : (valB - valA);
                     });
                     const metricLabels = {
+                        staffTime: 'Staff Time',
+                        effectiveTime: 'Effective Time',
                         produktivity: 'AVG Produktivity',
                         closedRate: 'Closed Rate',
                         callbackRate: 'Callback Rate',
                         hvcRate: 'HVC Rate',
                         aht: 'Average Handling Time',
-                        qaScore: 'QA Score',
-                        staffTime: 'Staff Time',
-                        nps: 'Net Promoter Score (NPS)',
                         badtiket: 'Badtiket',
-                        kehadiran: 'Kehadiran'
+                        qaScore: 'QA Score',
+                        kehadiran: 'Kehadiran',
+                        ratioBa: 'Ratio BA',
+                        nps: 'Net Promoter Score (NPS)'
                     };
                     const metricUnits = {
+                        staffTime: 'duration',
+                        effectiveTime: 'duration',
                         produktivity: 'number',
                         closedRate: 'percent',
                         callbackRate: 'percent',
                         hvcRate: 'percent',
                         aht: 'duration',
-                        qaScore: 'score',
-                        staffTime: 'duration',
-                        nps: 'percent',
                         badtiket: 'percent',
-                        kehadiran: 'percent'
+                        qaScore: 'score',
+                        kehadiran: 'percent',
+                        ratioBa: 'percent',
+                        nps: 'percent'
                     };
                     list = sorted.map((item, idx) => ({
                         rank: idx + 1,
@@ -11235,7 +11585,7 @@
               </button>` : '';
 
             if (isPodium) {
-                const content = photo 
+                const content = photo
                     ? `<img src="${photo}" class="avatar-photo-img" alt="${escapeHtml_(name)}" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" /><span class="avatar-initials-fallback" style="display:none;">${initials}</span>`
                     : initials;
                 return `
@@ -11247,7 +11597,7 @@
                   </div>
                 `;
             } else {
-                const content = photo 
+                const content = photo
                     ? `<img src="${photo}" class="lb-avatar-photo-img" alt="${escapeHtml_(name)}" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" /><span class="lb-avatar-initials-fallback" style="display:none;">${initials}</span>`
                     : initials;
                 return `
@@ -11999,13 +12349,15 @@
                 const mVal = item.metricValues || {};
                 const miniPills = [
                     { k: 'Staff', v: formatCardAchievementVal('staffTime', mVal.staffTime), key: 'staffTime' },
+                    { k: 'Effective', v: formatCardAchievementVal('effectiveTime', mVal.effectiveTime), key: 'effectiveTime' },
                     { k: 'Prod', v: formatCardAchievementVal('produktivity', mVal.produktivity), key: 'produktivity' },
                     { k: 'Closed', v: formatCardAchievementVal('closedRate', mVal.closedRate), key: 'closedRate' },
                     { k: 'CB', v: formatCardAchievementVal('callbackRate', mVal.callbackRate), key: 'callbackRate' },
                     { k: 'AHT', v: formatCardAchievementVal('aht', mVal.aht), key: 'aht' },
                     { k: 'Badtiket', v: formatCardAchievementVal('badtiket', mVal.badtiket), key: 'badtiket' },
                     { k: 'QA', v: formatCardAchievementVal('qaScore', mVal.qaScore), key: 'qaScore' },
-                    { k: 'Hadir', v: formatCardAchievementVal('kehadiran', mVal.kehadiran), key: 'kehadiran' }
+                    { k: 'Hadir', v: formatCardAchievementVal('kehadiran', mVal.kehadiran), key: 'kehadiran' },
+                    { k: 'Ratio BA', v: formatCardAchievementVal('ratioBa', mVal.ratioBa), key: 'ratioBa' }
                 ].map(p => {
                     const isHigh = activeBPMetric === p.key ? ' highlight-metric' : '';
                     return `<span class="lb-card-pill${isHigh}">${p.k}: <strong>${p.v}</strong></span>`;
@@ -12051,7 +12403,7 @@
 
             const colNameTL = currentBPMode === 'tl' ? 'Nama Team Leader &amp; Tim' : 'Nama Agent &amp; TL';
             const colMetricTL = currentBPMode === 'tl' ? 'Populasi Lolos Target' : 'Nilai Utama';
-            const colCardTL = currentBPMode === 'tl' ? 'Populasi 8 Card (%)' : 'Pencapaian 8 Card';
+            const colCardTL = currentBPMode === 'tl' ? 'Populasi 10 Card (%)' : 'Pencapaian 10 Card';
 
             wrap.innerHTML = `
               <table class="lb-table">

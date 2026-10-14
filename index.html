@@ -6902,7 +6902,7 @@
                         <h2 class="bp-title" id="bpMainTitle">Best Perform <span class="brand-accent">CHO Fixed</span>
                         </h2>
                         <p class="bp-subtitle" id="bpMainSubtitle">Apresiasi dan peringkat pencapaian tertinggi agen
-                            berdasarkan 10 metrik
+                            berdasarkan 9 metrik
                             analitik operasional.</p>
                         <button type="button" class="bp-formula-trigger-btn" onclick="toggleBPFormulaCard()"
                             id="btnToggleBPFormula" title="Klik untuk melihat penjelasan rumus penentuan peringkat">
@@ -6961,20 +6961,22 @@
                         </div>
 
                         <div class="bp-formula-grid">
-                            <!-- Card 1: 10 Pilar Metrik -->
+                            <!-- Card 1: 9 Pilar Metrik -->
                             <div class="bp-formula-box">
                                 <div class="bp-box-badge badge-blue">🎯 Pilar Penilaian</div>
-                                <h5>10 Metrik Operasional</h5>
-                                <p>Setiap agen dievaluasi di 10 metrik operasional terstandarisasi:</p>
+                                <h5>9 Metrik Operasional</h5>
+                                <p>Setiap agen dievaluasi di 9 metrik operasional terstandarisasi:</p>
                                 <ul class="bp-formula-list">
-                                    <li><span class="bullet positive">▲</span> <strong>6 Metrik Prestasi
-                                            Ranking:</strong> Produktivitas, Closed Rate, Callback Rate, QA Score,
+                                    <li><span class="bullet positive">▲</span> <strong>5 Metrik Prestasi
+                                            Ranking:</strong> Produktivitas, Closed Rate, QA Score,
                                         Badtiket (%), &amp; Kehadiran (%).</li>
                                     <li><span class="bullet efficiency">▼</span> <strong>2 Metrik Efisiensi
-                                            Ranking:</strong> AHT (Average Handling Time) &amp; Ratio BA (%) <em>(makin rendah makin tinggi
+                                            Ranking:</strong> AHT (Average Handling Time) &amp; Ratio BA (%) <em>(makin
+                                            rendah makin tinggi
                                             poin)</em>.</li>
                                     <li><span class="bullet positive">🎯</span> <strong>2 Metrik Berbasis Skoring
-                                            Target:</strong> Staff Time (Target 07:45:00) &amp; Effective Time (Target 07:00:00).</li>
+                                            Target:</strong> Staff Time (Target 07:45:00) &amp; Effective Time (Target
+                                        07:00:00).</li>
                                 </ul>
                             </div>
 
@@ -6983,19 +6985,22 @@
                                 <div class="bp-box-badge badge-purple">🎖️ Sistem Poin &amp; Skoring</div>
                                 <h5>Kriteria Skoring Metrik (Skala 10–100 Pts / Skor 1–10)</h5>
                                 <ul class="bp-formula-list" style="margin-top: 6px;">
-                                    <li><strong>Metrik Ranking (Prod, Closed, CB, QA, Hadir, Badtiket, AHT, Ratio BA):</strong><br><code>Poin = Max(10, 100 - (Rank - 1) × 5)</code><br>Rank
+                                    <li><strong>Metrik Ranking (Prod, Closed, QA, Hadir, Badtiket, AHT, Ratio
+                                            BA):</strong><br><code>Poin = Max(10, 100 - (Rank - 1) × 5)</code><br>Rank
                                         1 = 100 Pts, Rank 2 = 95 Pts, dst.</li>
-                                    <li><strong>Staff Time (&ge;07:45:00) &amp; Effective Time (&ge;07:00:00):</strong><br>Skoring berjenjang berbasis target durasi harian (10–100 Pts).</li>
+                                    <li><strong>Staff Time (&ge;07:45:00) &amp; Effective Time
+                                            (&ge;07:00:00):</strong><br>Skoring berjenjang berbasis target durasi harian
+                                        (10–100 Pts).</li>
                                 </ul>
                             </div>
 
                             <!-- Card 3: Penentuan Overall Score -->
                             <div class="bp-formula-box">
                                 <div class="bp-box-badge badge-gold">👑 Penentuan Juara 1</div>
-                                <h5>Overall Score (Rata-rata 10 Metrik)</h5>
-                                <p>Skor akumulasi adalah rata-rata poin dari ke-10 metrik:</p>
+                                <h5>Overall Score (Rata-rata 9 Metrik)</h5>
+                                <p>Skor akumulasi adalah rata-rata poin dari ke-9 metrik:</p>
                                 <div class="bp-formula-formula-tag formula-highlight">
-                                    <code>Overall Score = (∑ Poin 10 Metrik) / 10</code>
+                                    <code>Overall Score = (∑ Poin 9 Metrik) / 9</code>
                                 </div>
                                 <p style="font-size: 11.5px; margin-top: 6px; color: var(--text-dim);">Agen dengan
                                     Overall Score tertinggi dinobatkan sebagai <strong>Rank 1 (Champion)</strong> dan
@@ -7016,11 +7021,11 @@
                     </div>
                 </div>
 
-                <!-- Metric Selector Tabs (Overall + 10 Metrik) -->
+                <!-- Metric Selector Tabs (Overall + 9 Metrik) -->
                 <div class="bp-metric-nav" id="bpMetricNav">
                     <button class="bp-tab-btn active" data-metric="overall" onclick="setActiveBPMetric('overall')">
                         <span>🌟</span>
-                        <span>Overall (10 Metrik)</span>
+                        <span>Overall (9 Metrik)</span>
                     </button>
                     <button class="bp-tab-btn" data-metric="staffTime" onclick="setActiveBPMetric('staffTime')">
                         <span>⏳</span>
@@ -7037,10 +7042,6 @@
                     <button class="bp-tab-btn" data-metric="closedRate" onclick="setActiveBPMetric('closedRate')">
                         <span>✅</span>
                         <span>Closed Rate</span>
-                    </button>
-                    <button class="bp-tab-btn" data-metric="callbackRate" onclick="setActiveBPMetric('callbackRate')">
-                        <span>📞</span>
-                        <span>Callback Rate</span>
                     </button>
                     <button class="bp-tab-btn" data-metric="aht" onclick="setActiveBPMetric('aht')">
                         <span>⏱️</span>
@@ -7068,7 +7069,7 @@
                 <div class="bp-active-info-bar">
                     <div class="bp-info-main-row">
                         <div class="bp-info-title-group">
-                            <span class="bp-current-metric-name" id="bpMetricDisplayTitle">Overall Performance (10
+                            <span class="bp-current-metric-name" id="bpMetricDisplayTitle">Overall Performance (9
                                 Metrik)</span>
                             <span class="bp-current-metric-period" id="bpMetricDisplayPeriod">Periode: Semua
                                 Bulan</span>
@@ -7694,14 +7695,13 @@
                                 { name: 'Waasi Noorsatria Adhie', tl: 'ALFI RISKIANA', pBase: 23.8, cBase: 83.0, cbBase: 5.8, hBase: 80.0, ahtBase: 318, qBase: 90.5, stBase: 26200, nBase: 89.5, btBase: 50, kBase: 91.0 }
                             ];
 
-                            const mKeys = ['staffTime', 'effectiveTime', 'produktivity', 'closedRate', 'callbackRate', 'aht', 'badtiket', 'qaScore', 'kehadiran', 'ratioBa'];
+                            const mKeys = ['staffTime', 'effectiveTime', 'produktivity', 'closedRate', 'aht', 'badtiket', 'qaScore', 'kehadiran', 'ratioBa'];
                             const metrics = {
                                 staffTime: { label: 'Staff Time', unit: 'hms', ranked: [] },
                                 effectiveTime: { label: 'Effective Time', unit: 'hms', ranked: [] },
                                 produktivity: { label: 'AVG Produktivity', unit: 'number', ranked: [] },
                                 closedRate: { label: 'Closed Rate', unit: 'percent', ranked: [] },
-                                callbackRate: { label: 'Callback Rate', unit: 'percent', ranked: [] },
-                                aht: { label: 'AHT', unit: 'time', ranked: [] },
+                                                                aht: { label: 'AHT', unit: 'time', ranked: [] },
                                 badtiket: { label: 'Badtiket', unit: 'percent', ranked: [] },
                                 qaScore: { label: 'QA Score', unit: 'number', ranked: [] },
                                 kehadiran: { label: 'Kehadiran', unit: 'percent', ranked: [] },
@@ -7730,8 +7730,7 @@
                                     effectiveTime: etVal,
                                     produktivity: pVal,
                                     closedRate: cVal,
-                                    callbackRate: cbVal,
-                                    aht: ahtVal,
+                                                                        aht: ahtVal,
                                     badtiket: btVal,
                                     qaScore: qVal,
                                     kehadiran: kVal,
@@ -7742,8 +7741,7 @@
                                 metrics.effectiveTime.ranked.push({ rank: idx + 1, agent: a.name, tl: a.tl, value: etVal, unit: 'hms', metricValues: mV });
                                 metrics.produktivity.ranked.push({ rank: idx + 1, agent: a.name, tl: a.tl, value: pVal, unit: 'number', metricValues: mV });
                                 metrics.closedRate.ranked.push({ rank: idx + 1, agent: a.name, tl: a.tl, value: cVal, unit: 'percent', metricValues: mV });
-                                metrics.callbackRate.ranked.push({ rank: idx + 1, agent: a.name, tl: a.tl, value: cbVal, unit: 'percent', metricValues: mV });
-                                metrics.aht.ranked.push({ rank: idx + 1, agent: a.name, tl: a.tl, value: ahtVal, unit: 'time', metricValues: mV });
+                                                                metrics.aht.ranked.push({ rank: idx + 1, agent: a.name, tl: a.tl, value: ahtVal, unit: 'time', metricValues: mV });
                                 metrics.badtiket.ranked.push({ rank: idx + 1, agent: a.name, tl: a.tl, value: btVal, unit: 'percent', metricValues: mV });
                                 metrics.qaScore.ranked.push({ rank: idx + 1, agent: a.name, tl: a.tl, value: qVal, unit: 'number', metricValues: mV });
                                 metrics.kehadiran.ranked.push({ rank: idx + 1, agent: a.name, tl: a.tl, value: kVal, unit: 'percent', metricValues: mV });
@@ -7760,8 +7758,7 @@
                                     effectiveTime: { label: 'Effective Time', unit: 'hms', ranked: [] },
                                     produktivity: { label: 'AVG Produktivity', unit: 'number', ranked: [] },
                                     closedRate: { label: 'Closed Rate', unit: 'percent', ranked: [] },
-                                    callbackRate: { label: 'Callback Rate', unit: 'percent', ranked: [] },
-                                    aht: { label: 'AHT', unit: 'time', ranked: [] },
+                                                                        aht: { label: 'AHT', unit: 'time', ranked: [] },
                                     badtiket: { label: 'Badtiket', unit: 'percent', ranked: [] },
                                     qaScore: { label: 'QA Score', unit: 'number', ranked: [] },
                                     kehadiran: { label: 'Kehadiran', unit: 'percent', ranked: [] },
@@ -7780,13 +7777,12 @@
                                     const kVal = +(Math.min(100, Math.max(70, a.kBase + (shift * 0.3)))).toFixed(1);
                                     const rbaVal = +(Math.max(0.5, (a.rbaBase || 2.5) + (shift * 0.2))).toFixed(1);
 
-                                    const mV = { staffTime: stVal, effectiveTime: etVal, produktivity: pVal, closedRate: cVal, callbackRate: cbVal, aht: ahtVal, badtiket: btVal, qaScore: qVal, kehadiran: kVal, ratioBa: rbaVal };
+                                    const mV = { staffTime: stVal, effectiveTime: etVal, produktivity: pVal, closedRate: cVal, aht: ahtVal, badtiket: btVal, qaScore: qVal, kehadiran: kVal, ratioBa: rbaVal };
                                     m.staffTime.ranked.push({ rank: idx + 1, agent: a.name, tl: a.tl, value: stVal, unit: 'hms', metricValues: mV });
                                     m.effectiveTime.ranked.push({ rank: idx + 1, agent: a.name, tl: a.tl, value: etVal, unit: 'hms', metricValues: mV });
                                     m.produktivity.ranked.push({ rank: idx + 1, agent: a.name, tl: a.tl, value: pVal, unit: 'number', metricValues: mV });
                                     m.closedRate.ranked.push({ rank: idx + 1, agent: a.name, tl: a.tl, value: cVal, unit: 'percent', metricValues: mV });
-                                    m.callbackRate.ranked.push({ rank: idx + 1, agent: a.name, tl: a.tl, value: cbVal, unit: 'percent', metricValues: mV });
-                                    m.aht.ranked.push({ rank: idx + 1, agent: a.name, tl: a.tl, value: ahtVal, unit: 'time', metricValues: mV });
+                                                                        m.aht.ranked.push({ rank: idx + 1, agent: a.name, tl: a.tl, value: ahtVal, unit: 'time', metricValues: mV });
                                     m.badtiket.ranked.push({ rank: idx + 1, agent: a.name, tl: a.tl, value: btVal, unit: 'percent', metricValues: mV });
                                     m.qaScore.ranked.push({ rank: idx + 1, agent: a.name, tl: a.tl, value: qVal, unit: 'number', metricValues: mV });
                                     m.kehadiran.ranked.push({ rank: idx + 1, agent: a.name, tl: a.tl, value: kVal, unit: 'percent', metricValues: mV });
@@ -10341,7 +10337,7 @@
 
         function buildTLPopulationBundleFromOverall(overallList) {
             if (!overallList || overallList.length === 0) return { overall: [], metrics: {} };
-            const metricKeys = ['staffTime', 'effectiveTime', 'produktivity', 'closedRate', 'callbackRate', 'aht', 'badtiket', 'qaScore', 'kehadiran', 'ratioBa'];
+            const metricKeys = ['staffTime', 'effectiveTime', 'produktivity', 'closedRate', 'aht', 'badtiket', 'qaScore', 'kehadiran', 'ratioBa'];
             const metricLabels = {
                 staffTime: 'Staff Time',
                 effectiveTime: 'Effective Time',
@@ -10411,7 +10407,7 @@
             if (!agentList || agentList.length === 0) return { overall: [], metrics: {} };
 
             const tlMap = {};
-            const metricKeys = ['staffTime', 'effectiveTime', 'produktivity', 'closedRate', 'callbackRate', 'aht', 'badtiket', 'qaScore', 'kehadiran', 'ratioBa'];
+            const metricKeys = ['staffTime', 'effectiveTime', 'produktivity', 'closedRate', 'aht', 'badtiket', 'qaScore', 'kehadiran', 'ratioBa'];
 
             agentList.forEach(item => {
                 const tlName = (item.tl || '').trim();
@@ -10421,8 +10417,8 @@
                     tlMap[tlName] = {
                         tl: tlName,
                         agents: new Set(),
-                        totals: { staffTime: 0, effectiveTime: 0, produktivity: 0, closedRate: 0, callbackRate: 0, aht: 0, badtiket: 0, qaScore: 0, kehadiran: 0, ratioBa: 0 },
-                        pass: { staffTime: 0, effectiveTime: 0, produktivity: 0, closedRate: 0, callbackRate: 0, aht: 0, badtiket: 0, qaScore: 0, kehadiran: 0, ratioBa: 0 }
+                        totals: { staffTime: 0, effectiveTime: 0, produktivity: 0, closedRate: 0, aht: 0, badtiket: 0, qaScore: 0, kehadiran: 0, ratioBa: 0 },
+                        pass: { staffTime: 0, effectiveTime: 0, produktivity: 0, closedRate: 0, aht: 0, badtiket: 0, qaScore: 0, kehadiran: 0, ratioBa: 0 }
                     };
                 }
 
@@ -10551,13 +10547,13 @@
             if (currentBPMode === 'tl') {
                 if (badgePill) badgePill.innerHTML = '<span>👑</span><span>Hall of Fame &bull; Team Leader Leaderboard</span>';
                 if (mainTitle) mainTitle.innerHTML = 'Best Perform <span class="brand-accent">TL CHO Fixed</span>';
-                if (mainSubtitle) mainSubtitle.textContent = 'Peringkat performa Team Leader berdasarkan persentase Populasi SIAD/Agen yang memenuhi target 10 metrik operasional.';
+                if (mainSubtitle) mainSubtitle.textContent = 'Peringkat performa Team Leader berdasarkan persentase Populasi SIAD/Agen yang memenuhi target 9 metrik operasional.';
                 if (lbSubtitle) lbSubtitle.textContent = 'Urutan performa Team Leader rank 4 ke atas';
                 if (searchInput) searchInput.placeholder = 'Cari nama Team Leader...';
             } else {
                 if (badgePill) badgePill.innerHTML = '<span>⭐</span><span>Hall of Fame &bull; Performance Leaderboard</span>';
                 if (mainTitle) mainTitle.innerHTML = 'Best Perform <span class="brand-accent">CHO Fixed</span>';
-                if (mainSubtitle) mainSubtitle.textContent = 'Apresiasi dan peringkat pencapaian tertinggi agen berdasarkan 10 metrik analitik operasional.';
+                if (mainSubtitle) mainSubtitle.textContent = 'Apresiasi dan peringkat pencapaian tertinggi agen berdasarkan 9 metrik analitik operasional.';
                 if (lbSubtitle) lbSubtitle.textContent = 'Urutan performa agen rank 4 ke atas';
                 if (searchInput) searchInput.placeholder = 'Cari nama agen...';
             }
@@ -10589,12 +10585,12 @@
 
                     <div class="bp-formula-grid">
                         <div class="bp-formula-box">
-                            <div class="bp-box-badge badge-blue">🎯 Standar Target 10 Metrik</div>
+                            <div class="bp-box-badge badge-blue">🎯 Standar Target 9 Metrik</div>
                             <h5>Threshold Kelulusan Agen</h5>
                             <p>Setiap agen di tim TL dievaluasi terhadap standar target operasional:</p>
                             <ul class="bp-formula-list" style="font-size: 11px;">
                                 <li><span class="bullet positive">✓</span> <strong>Staff Time:</strong> &ge; 07h 45m &bull; <strong>Effective Time:</strong> &ge; 07h 00m</li>
-                                <li><span class="bullet positive">✓</span> <strong>Prod:</strong> &ge; 75 &bull; <strong>Closed:</strong> &ge; 40% &bull; <strong>Callback:</strong> &ge; 15%</li>
+                                <li><span class="bullet positive">✓</span> <strong>Prod:</strong> &ge; 75 &bull; <strong>Closed:</strong> &ge; 40%</li>
                                 <li><span class="bullet efficiency">✓</span> <strong>AHT:</strong> &le; 10 Menit (600s) &bull; <strong>Ratio BA:</strong> &le; 5%</li>
                                 <li><span class="bullet positive">✓</span> <strong>Badtiket:</strong> 0% &bull; <strong>QA Score:</strong> &ge; 95 &bull; <strong>Kehadiran:</strong> 100%</li>
                             </ul>
@@ -10607,15 +10603,15 @@
                             <div class="bp-formula-formula-tag">
                                 <code>Populasi = (Agen Lolos Target / Total Agen) × 100%</code>
                             </div>
-                            <p style="font-size: 11px; margin-top: 6px; color: var(--text-dim);">Dihitung secara independen untuk tiap-tiap metrik dari 10 metrik operasional.</p>
+                            <p style="font-size: 11px; margin-top: 6px; color: var(--text-dim);">Dihitung secara independen untuk tiap-tiap metrik dari 9 metrik operasional.</p>
                         </div>
 
                         <div class="bp-formula-box">
                             <div class="bp-box-badge badge-gold">👑 Penentuan Juara 1 TL</div>
-                            <h5>Overall Populasi TL (Rata-rata 10 Metrik)</h5>
-                            <p>Skor akumulasi Team Leader adalah rata-rata persentase populasi 10 metrik:</p>
+                            <h5>Overall Populasi TL (Rata-rata 9 Metrik)</h5>
+                            <p>Skor akumulasi Team Leader adalah rata-rata persentase populasi 9 metrik:</p>
                             <div class="bp-formula-formula-tag formula-highlight">
-                                <code>Overall Populasi = (∑ % Populasi 10 Metrik) / 10</code>
+                                <code>Overall Populasi = (∑ % Populasi 9 Metrik) / 9</code>
                             </div>
                             <p style="font-size: 11.5px; margin-top: 6px; color: var(--text-dim);">TL dengan Overall Populasi tertinggi dinobatkan sebagai <strong>Champion TL</strong> di Podium Emas.</p>
                         </div>
@@ -10646,10 +10642,10 @@
                     <div class="bp-formula-grid">
                         <div class="bp-formula-box">
                             <div class="bp-box-badge badge-blue">🎯 Pilar Penilaian</div>
-                            <h5>10 Metrik Operasional</h5>
-                            <p>Setiap agen dievaluasi di 10 metrik operasional terstandarisasi:</p>
+                            <h5>9 Metrik Operasional</h5>
+                            <p>Setiap agen dievaluasi di 9 metrik operasional terstandarisasi:</p>
                             <ul class="bp-formula-list">
-                                <li><span class="bullet positive">▲</span> <strong>6 Metrik Prestasi Ranking:</strong> Produktivitas, Closed Rate, Callback Rate, QA Score, Badtiket (%), &amp; Kehadiran (%).</li>
+                                <li><span class="bullet positive">▲</span> <strong>5 Metrik Prestasi Ranking:</strong> Produktivitas, Closed Rate, QA Score, Badtiket (%), &amp; Kehadiran (%).</li>
                                 <li><span class="bullet efficiency">▼</span> <strong>2 Metrik Efisiensi Durasi &amp; Rasio:</strong> AHT (Average Handling Time) &amp; Ratio BA (%) <em>(makin rendah makin tinggi poin)</em>.</li>
                                 <li><span class="bullet positive">🎯</span> <strong>2 Metrik Berbasis Skoring Target:</strong> Staff Time (Target 07:45:00) &amp; Effective Time (Target 07:00:00).</li>
                             </ul>
@@ -10659,17 +10655,17 @@
                             <div class="bp-box-badge badge-purple">🎖️ Sistem Poin &amp; Skoring</div>
                             <h5>Kriteria Skoring Metrik (Skala 10–100 Pts / Skor 1–10)</h5>
                             <ul class="bp-formula-list" style="margin-top: 6px;">
-                                <li><strong>Metrik Ranking (Prod, Closed, CB, QA, Hadir, AHT, Badtiket, Ratio BA):</strong><br><code>Poin = Max(10, 100 - (Rank - 1) × 5)</code><br>Rank 1 = 100 Pts, Rank 2 = 95 Pts, dst.</li>
+                                <li><strong>Metrik Ranking (Prod, Closed, QA, Hadir, AHT, Badtiket, Ratio BA):</strong><br><code>Poin = Max(10, 100 - (Rank - 1) × 5)</code><br>Rank 1 = 100 Pts, Rank 2 = 95 Pts, dst.</li>
                                 <li><strong>Staff Time (&ge;07:45:00) &amp; Effective Time (&ge;07:00:00):</strong><br>Skoring berjenjang berbasis target durasi harian (10–100 Pts).</li>
                             </ul>
                         </div>
 
                         <div class="bp-formula-box">
                             <div class="bp-box-badge badge-gold">👑 Penentuan Juara 1</div>
-                            <h5>Overall Score (Rata-rata 10 Metrik)</h5>
-                            <p>Skor akumulasi adalah rata-rata poin dari ke-10 metrik:</p>
+                            <h5>Overall Score (Rata-rata 9 Metrik)</h5>
+                            <p>Skor akumulasi adalah rata-rata poin dari ke-9 metrik:</p>
                             <div class="bp-formula-formula-tag formula-highlight">
-                                <code>Overall Score = (∑ Poin 10 Metrik) / 10</code>
+                                <code>Overall Score = (∑ Poin 9 Metrik) / 9</code>
                             </div>
                             <p style="font-size: 11.5px; margin-top: 6px; color: var(--text-dim);">Agen dengan Overall Score tertinggi dinobatkan sebagai <strong>Rank 1 (Champion)</strong> dan menempati podium emas teratas.</p>
                         </div>
@@ -10795,7 +10791,7 @@
                       <div class="orbit-sparkle"></div>
                     </div>
                     <div class="modal-loading-title">Menghitung Peringkat Best Perform...</div>
-                    <div class="modal-loading-desc">Mengolah data 10 metrik operasional...</div>
+                    <div class="modal-loading-desc">Mengolah data 9 metrik operasional...</div>
                   </div>
                 `;
                 if (stage) stage.innerHTML = loadingHtml;
@@ -10985,7 +10981,7 @@
         }
 
         function aggregateQuarterSliceFromMonths_(monthKeys) {
-            const metricKeys = ['staffTime', 'effectiveTime', 'produktivity', 'closedRate', 'callbackRate', 'aht', 'badtiket', 'qaScore', 'kehadiran', 'ratioBa'];
+            const metricKeys = ['staffTime', 'effectiveTime', 'produktivity', 'closedRate', 'aht', 'badtiket', 'qaScore', 'kehadiran', 'ratioBa'];
             const metricLabels = {
                 staffTime: 'Staff Time',
                 effectiveTime: 'Effective Time',
@@ -11111,7 +11107,7 @@
                 };
             });
 
-            // Overall ranking (Rata-rata 10 metrik)
+            // Overall ranking (Rata-rata 9 metrik)
             const overallRanked = agentsList.map(item => {
                 const ptsInfo = agentPoints[item.agent] || { totalPoints: 0, top1Count: 0 };
                 const overallScore = Math.round((ptsInfo.totalPoints / metricKeys.length) * 10) / 10;
@@ -11383,7 +11379,6 @@
                 { key: 'effectiveTime', label: 'Effective', val: vals.effectiveTime },
                 { key: 'produktivity', label: 'Prod', val: vals.produktivity },
                 { key: 'closedRate', label: 'Closed', val: vals.closedRate },
-                { key: 'callbackRate', label: 'CB', val: vals.callbackRate },
                 { key: 'aht', label: 'AHT', val: vals.aht },
                 { key: 'badtiket', label: 'Badtiket', val: vals.badtiket },
                 { key: 'qaScore', label: 'QA', val: vals.qaScore },
@@ -11403,7 +11398,7 @@
 
             return `
               <div class="podium-card-achievements">
-                <div class="achieve-title">${currentBPMode === 'tl' ? 'Populasi 10 Card (%)' : 'Pencapaian 10 Card'}</div>
+                <div class="achieve-title">${currentBPMode === 'tl' ? 'Populasi 9 Card (%)' : 'Pencapaian 9 Card'}</div>
                 <div class="achieve-grid">
                   ${itemsHtml}
                 </div>
@@ -11462,14 +11457,14 @@
         function getBPActiveListAndMeta(currentSlice) {
             currentSlice = currentSlice || getCurrentBPSlice() || bestPerformData || {};
             let list = [];
-            let label = 'Overall Performance (10 Metrik)';
+            let label = 'Overall Performance (9 Metrik)';
             let unit = 'score';
 
             if (currentBPMode === 'tl') {
                 const tlData = getTLPopulationData(currentSlice);
                 if (activeBPMetric === 'overall') {
                     list = tlData.overall || [];
-                    label = 'Overall Populasi Tim (10 Metrik)';
+                    label = 'Overall Populasi Tim (9 Metrik)';
                     unit = 'percent';
                 } else if (tlData.metrics && tlData.metrics[activeBPMetric]) {
                     const mInfo = tlData.metrics[activeBPMetric];
@@ -11480,7 +11475,7 @@
             } else {
                 if (activeBPMetric === 'overall') {
                     list = currentSlice.overall || [];
-                    label = 'Overall Performance (10 Metrik)';
+                    label = 'Overall Performance (9 Metrik)';
                     unit = 'score';
                 } else if (currentSlice.metrics && currentSlice.metrics[activeBPMetric]) {
                     const mInfo = currentSlice.metrics[activeBPMetric];
@@ -12352,7 +12347,6 @@
                     { k: 'Effective', v: formatCardAchievementVal('effectiveTime', mVal.effectiveTime), key: 'effectiveTime' },
                     { k: 'Prod', v: formatCardAchievementVal('produktivity', mVal.produktivity), key: 'produktivity' },
                     { k: 'Closed', v: formatCardAchievementVal('closedRate', mVal.closedRate), key: 'closedRate' },
-                    { k: 'CB', v: formatCardAchievementVal('callbackRate', mVal.callbackRate), key: 'callbackRate' },
                     { k: 'AHT', v: formatCardAchievementVal('aht', mVal.aht), key: 'aht' },
                     { k: 'Badtiket', v: formatCardAchievementVal('badtiket', mVal.badtiket), key: 'badtiket' },
                     { k: 'QA', v: formatCardAchievementVal('qaScore', mVal.qaScore), key: 'qaScore' },
@@ -12403,7 +12397,7 @@
 
             const colNameTL = currentBPMode === 'tl' ? 'Nama Team Leader &amp; Tim' : 'Nama Agent &amp; TL';
             const colMetricTL = currentBPMode === 'tl' ? 'Populasi Lolos Target' : 'Nilai Utama';
-            const colCardTL = currentBPMode === 'tl' ? 'Populasi 10 Card (%)' : 'Pencapaian 10 Card';
+            const colCardTL = currentBPMode === 'tl' ? 'Populasi 9 Card (%)' : 'Pencapaian 9 Card';
 
             wrap.innerHTML = `
               <table class="lb-table">
